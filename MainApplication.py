@@ -6,7 +6,7 @@ Created on April 7 2018
 Keras example using the Fashion-MNIST images from Zalando
 '''
 import sys
-from subprocess import Popen
+
 
 def exampleKerasApps():
     print("")
@@ -29,19 +29,22 @@ def exampleKerasApps():
         if option is "4":
             run("KerasRestApi.py")
 
+
 def newKerasProject():
     print("")
 
+
 def run(runfile):
-  with open(runfile,"r") as rnf:
-    exec(rnf.read())
+    with open(runfile,"r") as rnf:
+      exec(rnf.read())
+
 
 def main():
     print("###################################################")
     print("####  Welcome to the Keras Deep learning tool   ###")
     print("###################################################")
     print(" ")
-    while(True):
+    while True:
         print(" ")
         print("Input an option below")
         print("1. Select example projects")
@@ -55,6 +58,7 @@ def main():
         if option is "2":
             newKerasProject()
     sys.exit()
+
 
 if __name__ == "__main__":
     main()
