@@ -28,6 +28,8 @@ def exampleKerasApps():
             run("src/KerasStockPrediction.py")
         if option is "4":
             run("KerasRestApi.py")
+        if option is "5":
+            run("KerasExoplanetCNN.py")
 
 
 def newKerasProject():
