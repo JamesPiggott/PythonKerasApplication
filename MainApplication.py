@@ -15,7 +15,7 @@ def exampleKerasApps():
     print("2. Convolutional NN (MNIST-Fashion - Zalando")
     print("3. Recurrent NN (Stock market data")
     print("4. Rest API (ImageNet)")
-    print("4. Exoplanet CNN")
+    print("5. Exoplanet CNN")
     print("0. Exit application")
     while(True):
         option = input()

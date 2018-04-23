@@ -1,13 +1,18 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-
+import matplotlib.pyplot
 plt.style.use("ggplot")
 
 # Importing training set
 training_set = pd.read_csv("input/exoTrain.csv")
 X_train = training_set.iloc[:,1:].values
 y_train = training_set.iloc[:,0:1].values
+
+# print("The shape of X_train: ", X_train.shape[0])
+#
+# # matplotlib.pyplot.scatter(X_train.shape[0], X_train.shape[0])
+# # matplotlib.pyplot.show()
 
 # Importing test set
 test_set = pd.read_csv("input/exoTest.csv")
