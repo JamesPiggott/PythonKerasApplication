@@ -5,12 +5,12 @@ import numpy as np
 plt.style.use("ggplot")
 
 # Importing training set
-training_set = pd.read_csv("../input/exoTrain.csv")
+training_set = pd.read_csv("input/exoTrain.csv")
 X_train = training_set.iloc[:,1:].values
 y_train = training_set.iloc[:,0:1].values
 
 # Importing test set
-test_set = pd.read_csv("../input/exoTest.csv")
+test_set = pd.read_csv("input/exoTest.csv")
 X_test = test_set.iloc[:,1:].values
 y_test = test_set.iloc[:,0:1].values
 
