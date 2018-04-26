@@ -8,3 +8,6 @@ Initially it can be used on Convolutional Neural Networks (CNN) and Recurrent Ne
 Start the application
 
 python MainApplication.py
+
+Command to install dependencies
+$ pip install numpy scipy scikit-learn tensorflow pillow h5py keras
