@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f72b2b62-cd85-4edb-99e5-0986832cbbd2" name="Default" comment="" />
+    <list default="true" id="f72b2b62-cd85-4edb-99e5-0986832cbbd2" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ReadData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/KerasTutorial.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/KerasTutorial.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KerasAutoencoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/redundant/KerasAutoencoder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KerasExoplanetCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/redundant/KerasExoplanetCNN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KerasZalando.py" beforeDir="false" afterPath="$PROJECT_DIR$/KerasZalando.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainApplication.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainApplication.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/redundant/cat.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/redundant/dog.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion_model_dropout.h5py" beforeDir="false" afterPath="$PROJECT_DIR$/redundant/fashion_model_dropout.h5py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,26 +26,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="KerasZalando.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/KerasZalando.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="289" selection-start-line="289" selection-end-line="289" selection-end-column="14" />
-              <folding>
-                <element signature="e#116#128#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KerasStockPrediction.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/KerasStockPrediction.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="74" column="65" selection-start-line="74" selection-start-column="63" selection-end-line="74" selection-end-column="65" />
-              <folding>
-                <element signature="e#125#160#0" expanded="true" />
-              </folding>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="150">
+                <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -52,64 +55,77 @@
       <find>processData</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/KerasStart.py" />
         <option value="$PROJECT_DIR$/KerasRestApi.py" />
         <option value="$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/train.py" />
-        <option value="$PROJECT_DIR$/KerasZalando.py" />
         <option value="$PROJECT_DIR$/KerasStockPrediction.py" />
         <option value="$PROJECT_DIR$/src/KerasStockPrediction.py" />
+        <option value="$PROJECT_DIR$/KerasAutoencoder.py" />
+        <option value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/QuicksortMain.py" />
+        <option value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Quicksort.py" />
+        <option value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Multithreading/Multithreading.py" />
+        <option value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Bubblesort.py" />
+        <option value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Selectionsort.py" />
+        <option value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Mergesort.py" />
+        <option value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Insertionsort.py" />
+        <option value="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter2/MNIST.py" />
+        <option value="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter3/IMDB.py" />
+        <option value="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter3/Reuters.py" />
+        <option value="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter3/BostonHousing.py" />
+        <option value="$PROJECT_DIR$/src/ReadData.py" />
+        <option value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Numpy/NumpyArray.py" />
+        <option value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Heapsort.py" />
+        <option value="$PROJECT_DIR$/KerasZalando.py" />
+        <option value="$PROJECT_DIR$/MainApplication.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="210" />
-    <option name="y" value="75" />
-    <option name="width" value="1390" />
+    <option name="y" value="27" />
+    <option name="width" value="1370" />
     <option name="height" value="826" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="KerasTutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KerasTutorial" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KerasTutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KerasTutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="input" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KerasTutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KerasTutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="PythonKerasApplication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonKerasApplication" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/classify.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PythonGlyphReader" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/redundant" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/input" />
       <recent name="$PROJECT_DIR$/../KerasGlyphReader" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -124,56 +140,38 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.KerasStockPrediction">
-    <configuration name="KerasRestApi" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="KerasGlyphReader" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/anaconda/envs/KerasGlyphReader/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/classify.py" />
-      <option name="PARAMETERS" value="examples" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="KerasStart" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="KerasTutorial" />
+  <component name="RunManager" selected="Python.MainApplication">
+    <configuration name="Heapsort" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonSoftwareEngineeringInterview" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/KerasStart.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Heapsort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="KerasStockPrediction" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="KerasTutorial" />
+    <configuration name="Insertionsort" type="PythonConfigurationType" factoryName="Python">
+      <module name="PythonSoftwareEngineeringInterview" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/KerasStockPrediction.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Insertionsort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -197,18 +195,75 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="MainApplication" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="KerasTutorial" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MainApplication.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="NumpyArray" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonSoftwareEngineeringInterview" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Numpy" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Numpy/NumpyArray.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="ReadData" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="KerasTutorial" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/ReadData.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
-      <item itemvalue="Python.KerasStart" />
-      <item itemvalue="Python.KerasRestApi" />
+      <item itemvalue="Python.Insertionsort" />
+      <item itemvalue="Python.ReadData" />
+      <item itemvalue="Python.NumpyArray" />
+      <item itemvalue="Python.Heapsort" />
+      <item itemvalue="Python.MainApplication" />
       <item itemvalue="Python.KerasZalando" />
-      <item itemvalue="Python.KerasStockPrediction" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.KerasStockPrediction" />
+        <item itemvalue="Python.MainApplication" />
         <item itemvalue="Python.KerasZalando" />
-        <item itemvalue="Python.KerasRestApi" />
-        <item itemvalue="Python.KerasStart" />
+        <item itemvalue="Python.Heapsort" />
+        <item itemvalue="Python.NumpyArray" />
+        <item itemvalue="Python.ReadData" />
       </list>
     </recent_temporary>
   </component>
@@ -223,22 +278,106 @@
       <option name="presentableId" value="Default" />
       <updated>1522484762816</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added pip command">
+      <created>1524724227294</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1524724227294</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added multithreading and bubblesort">
+      <created>1525758351236</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1525758351236</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Selection sort">
+      <created>1525799229689</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1525799229689</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Merge sort implementation">
+      <created>1525936308618</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1525936308618</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Merge sort implementation">
+      <created>1525938466174</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1525938466174</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Merge sort implementation">
+      <created>1526322878232</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1526322878232</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added Francois Chollet's Mnist example code">
+      <created>1526499558369</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1526499558369</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added Francois Chollet's IMDB review example code">
+      <created>1526733115245</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1526733115245</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added more coding example from Francois Chollet">
+      <created>1526802276914</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1526802276914</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Insertion sort">
+      <created>1527014396082</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1527014396082</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Intro to Numpy">
+      <created>1527014418383</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1527014418383</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Heapsort first implementation">
+      <created>1527535602598</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1527535602598</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1916" height="923" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="25" width="1916" height="964" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13517745" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16858038" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005219" side_tool="true" weight="0.3407494" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.17396313" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947807" weight="0.21693122" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39929742" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -251,19 +390,78 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added pip command" />
+    <MESSAGE value="Added multithreading and bubblesort" />
+    <MESSAGE value="Selection sort" />
+    <MESSAGE value="Merge sort implementation" />
+    <MESSAGE value="Added Francois Chollet's Mnist example code" />
+    <MESSAGE value="Added Francois Chollet's IMDB review example code" />
+    <MESSAGE value="Added more coding example from Francois Chollet" />
+    <MESSAGE value="Insertion sort" />
+    <MESSAGE value="Intro to Numpy" />
+    <MESSAGE value="Heapsort first implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Heapsort first implementation" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/KerasStockPrediction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Quicksort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="49" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Multithreading/Multithreading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Quicksort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redundant/KerasAutoencoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KerasZalando.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4335">
+          <caret line="289" selection-start-line="289" selection-end-line="289" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KerasStockPrediction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="74" column="65" selection-start-line="74" selection-start-column="63" selection-end-line="74" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/KerasZalando.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-          <folding>
-            <element signature="e#116#128#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -271,26 +469,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#125#160#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/classify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="1" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/envs/KerasGlyphReader/lib/python3.6/site-packages/keras/datasets/fashion_mnist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/classify.py" />
+    <entry file="file://$USER_HOME$/anaconda/envs/KerasGlyphReader/lib/python3.6/site-packages/keras/datasets/fashion_mnist.py" />
     <entry file="file://$PROJECT_DIR$/KerasZalando.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
@@ -298,13 +481,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/classify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="1" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/classify.py" />
     <entry file="file://$PROJECT_DIR$/KerasZalando.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -312,13 +489,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/classify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/classify.py" />
     <entry file="file://$PROJECT_DIR$/KerasStart.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -333,55 +504,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KerasRestApi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KerasStart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/envs/KerasGlyphReader/lib/python3.6/site-packages/keras/datasets/fashion_mnist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/imageLoader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/featureExtractor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="53" column="36" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/classify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="1" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/anaconda/envs/KerasGlyphReader/lib/python3.6/site-packages/keras/datasets/fashion_mnist.py" />
+    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/imageLoader.py" />
+    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/featureExtractor.py" />
+    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/train.py" />
+    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/classify.py" />
     <entry file="file://$PROJECT_DIR$/input/individual_stocks_5yr/A_data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -396,13 +523,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/envs/KerasTutorial/lib/python3.6/subprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="335" selection-start-line="335" selection-end-line="335" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/anaconda/envs/KerasTutorial/lib/python3.6/subprocess.py" />
     <entry file="file://$PROJECT_DIR$/input/getSandP.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -417,23 +538,177 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KerasZalando.py">
+    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Vectorization/VectorizationComparison.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/QuicksortMain.py" />
+    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Selectionsort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Insertionsort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Mergesort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KerasStockPrediction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KerasRestApi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter2/MNIST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="22" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/keras/engine/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="1489" selection-start-line="1489" selection-end-line="1489" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/keras/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="1001" selection-start-line="1001" selection-end-line="1001" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter3/BostonHousing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="58" column="49" lean-forward="true" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter3/Reuters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter3/IMDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ReadData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Multithreading/Multithreading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="25" selection-start-line="25" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Numpy/NumpyArray.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#90#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Bubblesort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Quicksort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Heapsort.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
-          <caret line="289" selection-start-line="289" selection-end-line="289" selection-end-column="14" />
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KerasZalando.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1933">
+          <caret line="149" column="21" selection-start-line="149" selection-start-column="21" selection-end-line="149" selection-end-column="21" />
           <folding>
             <element signature="e#116#128#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/KerasStockPrediction.py">
+    <entry file="file://$PROJECT_DIR$/redundant/KerasAutoencoder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="74" column="65" selection-start-line="74" selection-start-column="63" selection-end-line="74" selection-end-column="65" />
+        <state relative-caret-position="810">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KerasStart.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
-            <element signature="e#125#160#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainApplication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

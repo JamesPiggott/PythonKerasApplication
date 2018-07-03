@@ -13,7 +13,7 @@ def exampleKerasApps():
     print("Select application to run (you will be asked to confirm)")
     print("1. Neural Network (Boston Housing data)")
     print("2. Convolutional NN (MNIST-Fashion - Zalando")
-    print("3. Recurrent NN (Stock market data")
+    print("3. Recurrent NN (Stock market data)")
     print("4. Rest API (ImageNet)")
     print("5. Exoplanet CNN")
     print("0. Exit application")
@@ -29,12 +29,36 @@ def exampleKerasApps():
             run("src/KerasStockPrediction.py")
         if option is "4":
             run("KerasRestApi.py")
-        if option is "5":
-            run("KerasExoplanetCNN.py")
 
 
 def newKerasProject():
-    print("")
+    print(" ")
+    print("1. Load data set")
+    print("2. Analyze and pre-process data set")
+    print("3. Define model")
+    print("4. Train model using data set")
+    print("5. Evaluate trained model")
+    print("6. Perform steps 1 through 5 in sequence")
+    print("0. Return to main menu")
+
+
+    while True:
+        project_option = input()
+
+        if project_option is "0":
+            break
+        # if project_option is "1":
+        #     # loadDataSet()
+        # if project_option is "2":
+        #     # analyzeDataSet()
+        # if project_option is "3":
+        #     # defineModel()
+        # if project_option is "4":
+        #     # trainModel()
+        # if project_option is "5":
+            # evaluateTrainedModel()
+        if project_option is "6":
+            break
 
 
 def run(runfile):
@@ -47,11 +71,12 @@ def main():
     print("####  Welcome to the Keras Deep learning tool   ###")
     print("###################################################")
     print(" ")
+
     while True:
         print(" ")
         print("Input an option below")
         print("1. Select example projects")
-        print("2. Create new Keras project")
+        print("2. Open or Create Keras project")
         print("0. Exit application")
         option = input()
         if option is "0":

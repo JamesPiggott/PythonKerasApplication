@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../KerasGlyphReader/.idea/KerasGlyphReader.iml" filepath="$PROJECT_DIR$/../KerasGlyphReader/.idea/KerasGlyphReader.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/KerasTutorial.iml" filepath="$PROJECT_DIR$/.idea/KerasTutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PythonGlyphReader/.idea/PythonGlyphReader.iml" filepath="$PROJECT_DIR$/../PythonGlyphReader/.idea/PythonGlyphReader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/.idea/PythonSoftwareEngineeringInterview.iml" filepath="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/.idea/PythonSoftwareEngineeringInterview.iml" />
     </modules>
   </component>
 </project>
