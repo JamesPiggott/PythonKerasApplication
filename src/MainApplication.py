@@ -5,7 +5,7 @@ Created on April 7 2018
 
 Keras example using the Fashion-MNIST images from Zalando
 '''
-import sys
+import sys, src.CreateOpenProjects as projects
 
 
 def exampleKerasApps():
@@ -32,13 +32,13 @@ def exampleKerasApps():
 
 
 def newKerasProject():
-    print(" ")
-    print("1. Load data set")
-    print("2. Analyze and pre-process data set")
-    print("3. Define model")
-    print("4. Train model using data set")
-    print("5. Evaluate trained model")
-    print("6. Perform steps 1 through 5 in sequence")
+    print("1. Enter project name")
+    print("2. Load data set")
+    print("3. Analyze and pre-process data set")
+    print("4. Define model")
+    print("5. Train model using data set")
+    print("6. Evaluate trained model")
+    print("7. Perform steps 2 through 6 in sequence")
     print("0. Return to main menu")
 
 
@@ -47,8 +47,10 @@ def newKerasProject():
 
         if project_option is "0":
             break
-        # if project_option is "1":
-        #     # loadDataSet()
+        if project_option is "1":
+            directory_name = input("Enter a name for your new Project: ")
+            message = projects.create_folder(directory_name)
+            print(message)
         # if project_option is "2":
         #     # analyzeDataSet()
         # if project_option is "3":
