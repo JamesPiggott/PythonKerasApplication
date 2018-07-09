@@ -22,13 +22,13 @@ def exampleKerasApps():
         if option is "0":
             break
         if option is "1":
-            run("KerasStart.py")
+            run("Projects/Test_projects/KerasStart.py")
         if option is "2":
-            run("KerasZalando.py")
+            run("Projects/Test_projects/KerasZalando.py")
         if option is "3":
-            run("src/KerasStockPrediction.py")
+            run("Projects/Test_projects/KerasStockPrediction.py")
         if option is "4":
-            run("KerasRestApi.py")
+            run("Projects/Test_projects/KerasRestApi.py")
 
 
 def newKerasProject():
@@ -65,7 +65,7 @@ def newKerasProject():
 
 def run(runfile):
     with open(runfile,"r") as rnf:
-      exec(rnf.read())
+        exec(rnf.read())
 
 
 def main():
