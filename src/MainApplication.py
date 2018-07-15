@@ -3,7 +3,8 @@ Created on April 7 2018
 
 @author: James Piggott
 
-Keras example using the Fashion-MNIST images from Zalando
+Python application that can be used to cycle through workflow of a Deep Learning modelling task.
+It uses Keras as a Deep Learning framework.
 '''
 import sys, src.CreateOpenProjects as projects
 
