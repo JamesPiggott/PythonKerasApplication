@@ -7,9 +7,13 @@ Python application that can be used to cycle through workflow of a Deep Learning
 It uses Keras as a Deep Learning framework.
 '''
 import sys, src.CreateOpenProjects as projects
+import src.AnalyzeDataSet as datasets
+import src.DefineModel as model
+import src.TrainModel as training
+import src.EvaluateModel as evaluation
 
 
-def exampleKerasApps():
+def example_keras_apps():
     print("")
     print("Select application to run (you will be asked to confirm)")
     print("1. Neural Network (Boston Housing data)")
@@ -18,7 +22,7 @@ def exampleKerasApps():
     print("4. Rest API (ImageNet)")
     print("5. Exoplanet CNN")
     print("0. Exit application")
-    while(True):
+    while True:
         option = input()
         if option is "0":
             break
@@ -32,16 +36,14 @@ def exampleKerasApps():
             run("Projects/Test_projects/KerasRestApi.py")
 
 
-def newKerasProject():
+def new_keras_project():
     print("1. Enter project name")
     print("2. Load data set")
-    print("3. Analyze and pre-process data set")
-    print("4. Define model")
-    print("5. Train model using data set")
-    print("6. Evaluate trained model")
-    print("7. Perform steps 2 through 6 in sequence")
+    print("3. Define model")
+    print("4. Train model using data set")
+    print("5. Evaluate trained model")
+    print("6. Perform steps 2 through 6 in sequence")
     print("0. Return to main menu")
-
 
     while True:
         project_option = input()
@@ -52,20 +54,27 @@ def newKerasProject():
             directory_name = input("Enter a name for your new Project: ")
             message = projects.create_folder(directory_name)
             print(message)
-        # if project_option is "2":
-        #     # analyzeDataSet()
-        # if project_option is "3":
-        #     # defineModel()
-        # if project_option is "4":
-        #     # trainModel()
-        # if project_option is "5":
-            # evaluateTrainedModel()
+        if project_option is "2":
+            datasets.load_data()
+            datasets.autodetect_data_format()
+            datasets.transform_data()
+        if project_option is "3":
+            model.define_model()
+            model.set_optimizer()
+            model.set_data_augmentation()
+        if project_option is "4":
+            training.train_model()
+            training.store_model()
+        if project_option is "5":
+            evaluation.evaluate_model()
         if project_option is "6":
-            break
+            print("TODO: cycle through the workflow automatically using project meta data")
+        else:
+            print("Not a valid option")
 
 
-def run(runfile):
-    with open(runfile,"r") as rnf:
+def run(run_file):
+    with open(run_file, "r") as rnf:
         exec(rnf.read())
 
 
@@ -85,9 +94,9 @@ def main():
         if option is "0":
             break
         if option is "1":
-            exampleKerasApps()
+            example_keras_apps()
         if option is "2":
-            newKerasProject()
+            new_keras_project()
     sys.exit()
 
 
