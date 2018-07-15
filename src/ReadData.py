@@ -10,34 +10,43 @@ Types of data includes images and CSV files that can be converted to data arrays
 
 '''
 
-from tkinter import *
+import os
 
-import sys
 
-def askUserForOptions():
+def askUserForOptions(project_name):
 
     # A project should already be selected
+    project = '../Projects/' + project_name + '/data/'
 
     # Ask about local data or to download it from the internet
+    data_set_completed = True
+    while data_set_completed:
 
-    # If data source is from the internet, ask for URL
-    window = Tk()
-    window.wm_title("Data URL ")
-    User_input = Entry()
-    User_input.pack()
+        # Check if data folder already contains data, if so ask to overwrite it
+        if not os.listdir(project):
+            print("Directory is empty. Please select data source option")
+            print("1. Download data)")
+            print("2. Copy-paste data")
+
+            data_option = input()
+
+            # If data source is from the internet, ask for URL
+            if data_option is "1":
+                download_data_set()
+
+            # Else check if data folder contains files
+            if data_option is "2":
+                print()
+            else:
+                print("User selection is not valid.")
+
+        else:
+            print("Directory is not empty")
 
 
-    user_problem = (User_input.get())
-
-    print(user_problem)
-
-    window.mainloop()
+def download_data_set():
+    print("Downloading data set")
 
 
 if __name__ == "__main__":
     askUserForOptions()
-
-
-
-
-

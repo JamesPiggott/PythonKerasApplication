@@ -51,24 +51,24 @@ def new_keras_project():
 
         if project_option is "0":
             break
-        if project_option is "1":
+        elif project_option is "1":
             directory_name = input("Enter a name for your new Project: ")
             message = projects.create_folder(directory_name)
             print(message)
-        if project_option is "2":
+        elif project_option is "2":
             datasets.load_data()
             datasets.autodetect_data_format()
             datasets.transform_data()
-        if project_option is "3":
+        elif project_option is "3":
             model.define_model()
             model.set_optimizer()
             model.set_data_augmentation()
-        if project_option is "4":
+        elif project_option is "4":
             training.train_model()
             training.store_model()
-        if project_option is "5":
+        elif project_option is "5":
             evaluation.evaluate_model()
-        if project_option is "6":
+        elif project_option is "6":
             print("TODO: cycle through the workflow automatically using project meta data")
         else:
             print("Not a valid option")
@@ -80,6 +80,7 @@ def run(run_file):
 
 
 def main():
+    print(" ")
     print("###################################################")
     print("####  Welcome to the Keras Deep learning tool   ###")
     print("###################################################")
