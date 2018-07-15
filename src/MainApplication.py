@@ -6,7 +6,8 @@ Created on April 7 2018
 Python application that can be used to cycle through workflow of a Deep Learning modelling task.
 It uses Keras as a Deep Learning framework.
 '''
-import sys, src.CreateOpenProjects as projects
+import sys
+import src.CreateOpenProjects as projects
 import src.AnalyzeDataSet as datasets
 import src.DefineModel as model
 import src.TrainModel as training
