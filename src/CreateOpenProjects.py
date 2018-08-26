@@ -5,7 +5,7 @@ Created on July 7 2018
 
 This class contains the functions to create and maintain projects
 '''
-import os, shutil
+import os
 
 
 # Create a new folder for a project
