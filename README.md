@@ -38,3 +38,10 @@ Below are the basic requirements for this application. They are part of a larger
 8.1.2.	 MNIST-fashion: with data from Zalando a basic CNN is created. This is considered an ‘Hello, world!’ example.
 8.1.3.	 Stock market data: used to create a simple Recurrent Neural network.
 8.1.4.	 Rest API: a simple coding example using ImageNet whose results can be accessed by REST API commands provided through the Python Flask library.
+
+
+#### Example projects
+1. Simple REST API app: allow user to train and test an image
+2. Simple RNN stock market app.
+3. Simple game AI
+4. Simple graph and interface app
