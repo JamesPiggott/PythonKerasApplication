@@ -41,7 +41,9 @@ Below are the basic requirements for this application. They are part of a larger
 
 
 #### Example projects
-1. Simple REST API app: allow user to train and test an image
+In addition to the basic Keras app there are a number of showcase applications. These integrate Keras into everyday applications such as image recognition, a game and stock market app.
+
+1. Simple REST API app: allow user to train and test an image.
 2. Simple RNN stock market app.
-3. Simple game AI
-4. Simple graph and interface app
+3. Simple game AI.
+4. Simple graph and interface app.
