@@ -7,11 +7,12 @@ Python application that can be used to cycle through workflow of a Deep Learning
 It uses Keras as a Deep Learning framework.
 '''
 import sys
-import CreateOpenProjects as projects
-import AnalyzeDataSet as datasets
-import DefineModel as model
-import TrainModel as training
-import EvaluateModel as evaluation
+
+from projects.test_projects.KerasStart import KerasStart
+# from projects.test_projects.KerasRestApi import KerasRestApi
+# from projects.test_projects.KerasRestApiSimpleRequest import KerasRestApiSimpleRequest
+# from projects.test_projects.KerasStockPrediction import KerasStockPrediction
+from projects.test_projects.KerasZalando import KerasZalando
 
 
 def example_keras_apps():
@@ -28,9 +29,11 @@ def example_keras_apps():
         if option is "0":
             break
         if option is "1":
-            run("Projects/Test_projects/KerasStart.py")
+            keras_start = KerasStart()
+            keras_start.start()
         if option is "2":
-            run("Projects/Test_projects/KerasZalando.py")
+            zalando = KerasZalando()
+            zalando.start()
         if option is "3":
             run("Projects/Test_projects/KerasStockPrediction.py")
         if option is "4":

@@ -5,3 +5,6 @@ tensorflow
 pillow 
 h5py 
 keras
+pandas
+matplotlib
+tkinter
