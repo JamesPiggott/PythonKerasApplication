@@ -7,11 +7,11 @@ Python application that can be used to cycle through workflow of a Deep Learning
 It uses Keras as a Deep Learning framework.
 '''
 import sys
-import src.CreateOpenProjects as projects
-import src.AnalyzeDataSet as datasets
-import src.DefineModel as model
-import src.TrainModel as training
-import src.EvaluateModel as evaluation
+import CreateOpenProjects as projects
+import AnalyzeDataSet as datasets
+import DefineModel as model
+import TrainModel as training
+import EvaluateModel as evaluation
 
 
 def example_keras_apps():
