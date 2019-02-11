@@ -11,33 +11,33 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 from keras.models import Sequential
 from keras.layers import LSTM,Dense
 from sklearn.preprocessing import MinMaxScaler
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import subprocess
 from subprocess import check_output
 
 class KerasStockPrediction:
 
     #Create a function to process the data into 7 day look back slices
-    def processData(data,lb):
+    def processData(self, data, lb):
             X,Y = [],[]
             for i in range(len(data)-lb-1):
                 X.append(data[i:(i+lb),0])
                 Y.append(data[(i+lb),0])
             return np.array(X),np.array(Y)
 
-    def start():
-        data = pd.read_csv('src/all_stocks_5yr.csv')
+    def start(self):
+        data = pd.read_csv('projects/test_projects/all_stocks_5yr.csv')
         cl = data[data['Name'] == 'MMM'].close
 
         scl = MinMaxScaler()
 
         #Scale the data
-        cl = cl.reshape(cl.shape[0],1)
+        cl = cl.values.reshape(cl.shape[0],1)
         cl = scl.fit_transform(cl)
         cl
 
         # Reshape the data
-        X,y = processData(cl,7)
+        X,y = self.processData(cl,7)
         X_train,X_test = X[:int(X.shape[0]*0.80)],X[int(X.shape[0]*0.80):]
         y_train,y_test = y[:int(y.shape[0]*0.80)],y[int(y.shape[0]*0.80):]
         print(X_train.shape[0])
@@ -59,15 +59,15 @@ class KerasStockPrediction:
         history = model.fit(X_train,y_train,epochs=300,validation_data=(X_test,y_test),shuffle=False)
 
         # Plot the results
-        plt.plot(history.history['loss'])
-        plt.plot(history.history['val_loss'])
-        plt.show()
-
-        # Predict
-        Xt = model.predict(X_test)
-        plt.plot(scl.inverse_transform(y_test.reshape(-1,1)))
-        plt.plot(scl.inverse_transform(Xt))
-        plt.show()
+        # plt.plot(history.history['loss'])
+        # plt.plot(history.history['val_loss'])
+        # plt.show()
+        #
+        # # Predict
+        # Xt = model.predict(X_test)
+        # plt.plot(scl.inverse_transform(y_test.reshape(-1,1)))
+        # plt.plot(scl.inverse_transform(Xt))
+        # plt.show()
 
         act = []
         pred = []
@@ -81,6 +81,6 @@ class KerasStockPrediction:
         result_df = pd.DataFrame({'pred':list(np.reshape(pred, (-1))),'act':list(np.reshape(act, (-1)))})
 
         Xt = model.predict(X_test)
-        plt.plot(scl.inverse_transform(y_test.reshape(-1,1)))
-        plt.plot(scl.inverse_transform(Xt))
-        plt.show()
+        # plt.plot(scl.inverse_transform(y_test.reshape(-1,1)))
+        # plt.plot(scl.inverse_transform(Xt))
+        # plt.show()

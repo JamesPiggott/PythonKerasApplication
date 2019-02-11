@@ -7,4 +7,3 @@ h5py
 keras
 pandas
 matplotlib
-tkinter

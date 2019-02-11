@@ -11,8 +11,8 @@ import sys
 from projects.test_projects.KerasStart import KerasStart
 # from projects.test_projects.KerasRestApi import KerasRestApi
 # from projects.test_projects.KerasRestApiSimpleRequest import KerasRestApiSimpleRequest
-# from projects.test_projects.KerasStockPrediction import KerasStockPrediction
-from projects.test_projects.KerasZalando import KerasZalando
+from projects.test_projects.KerasStockPrediction import KerasStockPrediction
+# from projects.test_projects.KerasZalando import KerasZalando
 
 
 def example_keras_apps():
@@ -32,10 +32,12 @@ def example_keras_apps():
             keras_start = KerasStart()
             keras_start.start()
         if option is "2":
-            zalando = KerasZalando()
-            zalando.start()
+            print()
+            # zalando = KerasZalando()
+            # zalando.start()
         if option is "3":
-            run("Projects/Test_projects/KerasStockPrediction.py")
+            stocks = KerasStockPrediction()
+            stocks.start()
         if option is "4":
             run("Projects/Test_projects/KerasRestApi.py")
 

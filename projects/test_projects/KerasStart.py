@@ -1,6 +1,7 @@
 from keras.models import Sequential
 from keras.layers import Dense
 from keras.datasets import boston_housing
+from keras.models import model_from_json
 
 class KerasStart:
 
@@ -19,8 +20,8 @@ class KerasStart:
         # Configure the learning process (optimizer, loss function
         model.compile(optimizer='rmsprop', loss='mse', metrics=['mse', 'mae'])
 
-        # Train the model 1000 times over with the same input
-        model.fit(X_train, Y_train, batch_size=4, epochs=1000, verbose=0)
+        # Train the model 1000 times over with the same input - verbose can be {0, 1, 2}
+        model.fit(X_train, Y_train, batch_size=4, epochs=100, verbose=2)
 
         # Test the accuracy of the trained model
         scores = model.evaluate(X_test, Y_test)
@@ -28,3 +29,15 @@ class KerasStart:
 
         # Display a summary of the model
         model.summary()
+
+        # Saving the model
+        # serialize model to JSON and save as .json file
+        model_json = model.to_json()
+        with open("model.json", "w") as json_file:
+            json_file.write(model_json)
+
+        # serialize weights to HDF5 and save as .h5 file
+        model.save_weights("model.h5")
+        print("Saved model to disk")
+
+        print("We are done!")
