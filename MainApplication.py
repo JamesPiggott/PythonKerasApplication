@@ -12,7 +12,7 @@ from projects.test_projects.KerasStart import KerasStart
 # from projects.test_projects.KerasRestApi import KerasRestApi
 # from projects.test_projects.KerasRestApiSimpleRequest import KerasRestApiSimpleRequest
 from projects.test_projects.KerasStockPrediction import KerasStockPrediction
-# from projects.test_projects.KerasZalando import KerasZalando
+from projects.test_projects.KerasZalando import KerasZalando
 
 
 def example_keras_apps():
@@ -24,20 +24,23 @@ def example_keras_apps():
     print("4. Rest API (ImageNet)")
     print("5. Exoplanet CNN")
     print("0. Exit application")
-    while True:
+    run = True
+    while run:
         option = input()
         if option is "0":
             break
         if option is "1":
             keras_start = KerasStart()
             keras_start.start()
+            run = False
         if option is "2":
-            print()
-            # zalando = KerasZalando()
-            # zalando.start()
+            zalando = KerasZalando()
+            zalando.start()
+            run = False
         if option is "3":
             stocks = KerasStockPrediction()
             stocks.start()
+            run = False
         if option is "4":
             run("Projects/Test_projects/KerasRestApi.py")
 

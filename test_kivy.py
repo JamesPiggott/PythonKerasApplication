@@ -12,9 +12,14 @@ class LoginScreen(GridLayout):
         self.add_widget(Label(text='User Name'))
         self.username = TextInput(multiline=False)
         self.add_widget(self.username)
-        self.add_widget(Label(text='password'))
+
+        self.add_widget(Label(text='Password'))
         self.password = TextInput(password=True, multiline=False)
         self.add_widget(self.password)
+
+        self.add_widget(Label(text='Two Factor Auth'))
+        self.tfa = TextInput(multiline=False)
+        self.add_widget(self.tfa)
 
 
 class MyApp(App):
