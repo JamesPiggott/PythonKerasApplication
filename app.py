@@ -22,6 +22,45 @@ def get_available_gpus():
     print("CPUs: ", [x.name for x in local_device_protos if x.device_type == 'CPU'])
     print("GPUs: ", [x.name for x in local_device_protos if x.device_type == 'GPU'])
 
+def ask_user_for_training_options(option):
+    print("")
+    print("Select training options: # epochs and model save choice")
+
+    if option is "1":
+        while True:
+            print("For 'Boston Housing Data' 300 epochs are typical")
+            epochs = int(input("Enter number of epochs: "))
+            print("Do you wish to save the model to disk? [yes/Yes||no/No]")
+            save_model = input("Enter choice: ")
+
+            if epochs > 0 and epochs < 1000:
+                if save_model in ['y', 'Y', 'yes', 'Yes', 'YES', 'n', 'N', 'no', 'No', 'NO']:
+                    return [epochs, True]
+                else:
+                    print("Please enter a choice that can be interpreted as 'yes' or 'no'")
+            else:
+                print("Please enter a sensible value between 0 and 1000")
+
+    if option is "2":
+        while True:
+            print("For 'MNIST-Fashion Zalando' 20 epochs are typical")
+            epochs = int(input("Enter number of epochs: "))
+            print("Do you wish to save the model to disk? [yes/Yes||no/No]")
+            save_model = input("Enter choice: ")
+
+            if epochs > 0 and epochs < 100:
+                if save_model in ['y', 'Y', 'yes', 'Yes', 'YES', 'n', 'N', 'no', 'No', 'NO']:
+                    return [epochs, True]
+                else:
+                    print("Please enter a choice that can be interpreted as 'yes' or 'no'")
+            else:
+                print("Please enter a sensible value between 0 and 1000")
+    if option is "3":
+        print()
+
+    if option is "4":
+        print()
+
 
 def example_keras_apps():
     print("")
@@ -38,12 +77,14 @@ def example_keras_apps():
         if option is "0":
             break
         if option is "1":
+            options = ask_user_for_training_options(option)
             keras_start = KerasStart()
-            keras_start.start()
+            keras_start.start(options[0], options[1])
             run = False
         if option is "2":
+            options = ask_user_for_training_options(option)
             zalando = KerasZalando()
-            zalando.start()
+            zalando.start(options[0], options[1])
             run = False
         if option is "3":
             stocks = KerasStockPrediction()

@@ -22,7 +22,7 @@ from keras.layers.advanced_activations import LeakyReLU
 class KerasZalando:
 
 
-    def start(self):
+    def start(self, epochs, model_save_choice):
         (train_X, train_Y), (test_X, test_Y) = fashion_mnist.load_data()
 
         # Check the size of the dimensions - there should 6000 images with size 28 * 28
@@ -75,7 +75,7 @@ class KerasZalando:
 
         # There will three convolutional layers.
         batch_size = 64
-        epochs = 20
+        epochs = epochs
         num_classes = 10
 
         # The complete model
@@ -155,6 +155,18 @@ class KerasZalando:
         from sklearn.metrics import classification_report
         target_names = ["Class {}".format(i) for i in range(num_classes)]
         print(classification_report(test_Y, predicted_classes, target_names=target_names))
+
+        if model_save_choice == True:
+
+            # Saving the model
+            # serialize model to JSON and save as .json file
+            model_json = fashion_model.to_json()
+            with open("Zalando_model.json", "w") as json_file:
+                json_file.write(model_json)
+
+            # serialize weights to HDF5 and save as .h5 file
+            fashion_model.save_weights("Zalando_model.h5")
+            print("Saved model to disk")
 
 
 if __name__ == "__main__":

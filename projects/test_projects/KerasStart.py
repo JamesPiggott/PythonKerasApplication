@@ -5,7 +5,7 @@ from keras.models import model_from_json
 
 class KerasStart:
 
-    def start(self):
+    def start(self, epochs, model_save_choice):
 
         # Load the data
         (X_train, Y_train), (X_test, Y_test) = boston_housing.load_data()
@@ -21,7 +21,7 @@ class KerasStart:
         model.compile(optimizer='rmsprop', loss='mse', metrics=['mse', 'mae'])
 
         # Train the model 1000 times over with the same input - verbose can be {0, 1, 2}
-        model.fit(X_train, Y_train, batch_size=4, epochs=100, verbose=2)
+        model.fit(X_train, Y_train, batch_size=4, epochs=epochs, verbose=2)
 
         # Test the accuracy of the trained model
         scores = model.evaluate(X_test, Y_test)
@@ -30,14 +30,16 @@ class KerasStart:
         # Display a summary of the model
         model.summary()
 
-        # Saving the model
-        # serialize model to JSON and save as .json file
-        model_json = model.to_json()
-        with open("model.json", "w") as json_file:
-            json_file.write(model_json)
+        if model_save_choice == True:
 
-        # serialize weights to HDF5 and save as .h5 file
-        model.save_weights("model.h5")
-        print("Saved model to disk")
+            # Saving the model
+            # serialize model to JSON and save as .json file
+            model_json = model.to_json()
+            with open("Boston_model.json", "w") as json_file:
+                json_file.write(model_json)
+
+            # serialize weights to HDF5 and save as .h5 file
+            model.save_weights("Boston_model.h5")
+            print("Saved model to disk")
 
         print("We are done!")
