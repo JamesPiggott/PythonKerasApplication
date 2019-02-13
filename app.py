@@ -14,6 +14,14 @@ from projects.test_projects.KerasStart import KerasStart
 from projects.test_projects.KerasStockPrediction import KerasStockPrediction
 from projects.test_projects.KerasZalando import KerasZalando
 
+from tensorflow.python.client import device_lib
+
+def get_available_gpus():
+    local_device_protos = device_lib.list_local_devices()
+    print("Your system has the following devices available for Deep Learning")
+    print("CPUs: ", [x.name for x in local_device_protos if x.device_type == 'CPU'])
+    print("GPUs: ", [x.name for x in local_device_protos if x.device_type == 'GPU'])
+
 
 def example_keras_apps():
     print("")
@@ -99,6 +107,7 @@ def main():
         print("Input an option below")
         print("1. Select example projects")
         print("2. Open or Create Keras project")
+        print("3. Detect hardware available")
         print("0. Exit application")
         option = input()
         if option is "0":
@@ -107,6 +116,8 @@ def main():
             example_keras_apps()
         if option is "2":
             new_keras_project()
+        if option is "3":
+            get_available_gpus()
     sys.exit()
 
 
