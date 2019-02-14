@@ -13,6 +13,8 @@ from projects.test_projects.KerasStart import KerasStart
 # from projects.test_projects.KerasRestApiSimpleRequest import KerasRestApiSimpleRequest
 from projects.test_projects.KerasStockPrediction import KerasStockPrediction
 from projects.test_projects.KerasZalando import KerasZalando
+from projects.test_projects.KerasExoplanetCNN import KerasExoplanetCNN
+from projects.test_projects.KerasAutoencoder import KerasAutoEncoder
 
 from tensorflow.python.client import device_lib
 
@@ -54,13 +56,41 @@ def ask_user_for_training_options(option):
                 else:
                     print("Please enter a choice that can be interpreted as 'yes' or 'no'")
             else:
-                print("Please enter a sensible value between 0 and 1000")
+                print("Please enter a sensible value between 0 and 100")
     if option is "3":
         print()
 
     if option is "4":
         print()
 
+    if option is "5":
+        while True:
+            print("For 'Exoplanet CNN' 32 epochs are typical")
+            epochs = int(input("Enter number of epochs: "))
+            print("Do you wish to save the model to disk? [yes/Yes||no/No]")
+            save_model = input("Enter choice: ")
+
+            if epochs > 0 and epochs < 100:
+                if save_model in ['y', 'Y', 'yes', 'Yes', 'YES', 'n', 'N', 'no', 'No', 'NO']:
+                    return [epochs, True]
+                else:
+                    print("Please enter a choice that can be interpreted as 'yes' or 'no'")
+            else:
+                print("Please enter a sensible value between 0 and 100")
+    if option is "6":
+        while True:
+            print("For 'MNIST-AutoEncoder' 50 epochs are typical")
+            epochs = int(input("Enter number of epochs: "))
+            print("Do you wish to save the model to disk? [yes/Yes||no/No]")
+            save_model = input("Enter choice: ")
+
+            if epochs > 0 and epochs < 100:
+                if save_model in ['y', 'Y', 'yes', 'Yes', 'YES', 'n', 'N', 'no', 'No', 'NO']:
+                    return [epochs, True]
+                else:
+                    print("Please enter a choice that can be interpreted as 'yes' or 'no'")
+            else:
+                print("Please enter a sensible value between 0 and 100")
 
 def example_keras_apps():
     print("")
@@ -70,6 +100,7 @@ def example_keras_apps():
     print("3. Recurrent NN (Stock market data)")
     print("4. Rest API (ImageNet)")
     print("5. Exoplanet CNN")
+    print("6. MNIST Autoencoder")
     print("0. Exit application")
     run = True
     while run:
@@ -92,6 +123,17 @@ def example_keras_apps():
             run = False
         if option is "4":
             run("Projects/Test_projects/KerasRestApi.py")
+
+        if option is "5":
+            options = ask_user_for_training_options(option)
+            exoplanet = KerasExoplanetCNN()
+            exoplanet.start(options[0], options[1])
+            run = False
+        if option is "6":
+            options = ask_user_for_training_options(option)
+            autoencoder = KerasAutoEncoder()
+            autoencoder.start(options[0], options[1])
+            run = False
 
 
 def new_keras_project():

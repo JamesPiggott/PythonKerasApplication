@@ -35,11 +35,11 @@ class KerasStart:
             # Saving the model
             # serialize model to JSON and save as .json file
             model_json = model.to_json()
-            with open("Boston_model.json", "w") as json_file:
+            with open("boston_model.json", "w") as json_file:
                 json_file.write(model_json)
 
             # serialize weights to HDF5 and save as .h5 file
-            model.save_weights("Boston_model.h5")
+            model.save_weights("boston_model.h5")
             print("Saved model to disk")
 
         print("We are done!")
