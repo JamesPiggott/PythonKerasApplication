@@ -108,7 +108,7 @@ class KerasZalando:
         fashion_train_dropout = fashion_model.fit(train_X, train_label, batch_size=batch_size,epochs=epochs,verbose=2,validation_data=(valid_X, valid_label))
 
         # Save the trained model
-        fashion_model.save("fashion_model_dropout.h5py")
+        # fashion_model.save("fashion_model_dropout.h5py")
 
         # Evaluation of the model
         test_eval = fashion_model.evaluate(test_X,test_Y_one_hot,verbose=2)
@@ -168,6 +168,7 @@ class KerasZalando:
             fashion_model.save_weights("Zalando_model.h5")
             print("Saved model to disk")
 
+        print("We are done!")
 
 if __name__ == "__main__":
-    runcode()
+    start()

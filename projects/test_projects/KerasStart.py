@@ -43,3 +43,6 @@ class KerasStart:
             print("Saved model to disk")
 
         print("We are done!")
+
+if __name__ == "__main__":
+    start()
