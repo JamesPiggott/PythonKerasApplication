@@ -1,8 +1,5 @@
-# import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-# import matplotlib.pyplot
-# plt.style.use("ggplot")
 
 class KerasExoplanetCNN:
 
@@ -12,11 +9,6 @@ class KerasExoplanetCNN:
         training_set = pd.read_csv("input/exoTrain.csv")
         X_train = training_set.iloc[:,1:].values
         y_train = training_set.iloc[:,0:1].values
-
-        # print("The shape of X_train: ", X_train.shape[0])
-        #
-        # # matplotlib.pyplot.scatter(X_train.shape[0], X_train.shape[0])
-        # # matplotlib.pyplot.show()
 
         # Importing test set
         test_set = pd.read_csv("input/exoTest.csv")
@@ -65,21 +57,22 @@ class KerasExoplanetCNN:
         classifier.compile(optimizer="adam", loss="binary_crossentropy", metrics=["accuracy"])
 
         # Train!
-        classifier.fit(X_train, y_train, batch_size=epochs, epochs=1, validation_data=(X_test,y_test))
+        classifier.fit(X_train, y_train, batch_size=64, epochs=epochs, validation_data=(X_test,y_test), verbose=2)
 
         # Evaluate the model
         score = classifier.evaluate(X_test, y_test)
+        print("\n%s: %.2f%%" % (classifier.metrics_names[1], score[1]))
 
         if model_save_choice == True:
 
             # Saving the model
             # serialize model to JSON and save as .json file
-            model_json = model.to_json()
+            model_json = classifier.to_json()
             with open("exoplanet_model.json", "w") as json_file:
                 json_file.write(model_json)
 
             # serialize weights to HDF5 and save as .h5 file
-            model.save_weights("exoplanet_model.h5")
+            classifier.save_weights("exoplanet_model.h5")
             print("Saved model to disk")
 
         print("We are done!")
