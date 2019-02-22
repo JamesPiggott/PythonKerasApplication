@@ -44,5 +44,8 @@ class KerasStart:
 
         print("We are done!")
 
+    def test_number(self):
+        return 10;
+
 if __name__ == "__main__":
     start()
