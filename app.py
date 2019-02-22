@@ -57,7 +57,7 @@ def ask_user_for_training_options(option):
                     print("Please enter a choice that can be interpreted as 'yes' or 'no'")
             else:
                 print("Please enter a sensible value between 0 and 100")
-                
+
     if option is "3":
         print()
 
