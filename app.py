@@ -16,6 +16,8 @@ from projects.test_projects.KerasZalando import KerasZalando
 from projects.test_projects.KerasExoplanetCNN import KerasExoplanetCNN
 from projects.test_projects.KerasAutoencoder import KerasAutoEncoder
 
+from src.CreateOpenProjects import create_folder
+
 from tensorflow.python.client import device_lib
 
 def get_available_gpus():
@@ -154,7 +156,7 @@ def new_keras_project():
             break
         elif project_option is "1":
             directory_name = input("Enter a name for your new Project: ")
-            message = projects.create_folder(directory_name)
+            message = create_folder(directory_name)
             print(message)
         elif project_option is "2":
             datasets.load_data()
