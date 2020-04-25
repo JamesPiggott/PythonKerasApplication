@@ -16,7 +16,17 @@ from projects.test_projects.KerasZalando import KerasZalando
 from projects.test_projects.KerasExoplanetCNN import KerasExoplanetCNN
 from projects.test_projects.KerasAutoencoder import KerasAutoEncoder
 
-from src.CreateOpenProjects import create_folder
+from src.CreateOpenProjects import *
+# from src.CreateOpenProjects import create_folder
+from src.DefineModel import define_model
+from src.DefineModel import set_optimizer
+from src.DefineModel import set_data_augmentation
+from src.AnalyzeDataSet import load_data
+from src.AnalyzeDataSet import autodetect_data_format
+from src.AnalyzeDataSet import transform_data
+from src.TrainModel import train_model
+from src.TrainModel import store_model
+from src.EvaluateModel import evaluate_model
 
 from tensorflow.python.client import device_lib
 
@@ -141,7 +151,7 @@ def example_keras_apps():
 
 
 def new_keras_project():
-    print("1. Enter project name")
+    print("1. Project management")
     print("2. Load data set")
     print("3. Define model")
     print("4. Train model using data set")
@@ -155,26 +165,53 @@ def new_keras_project():
         if project_option is "0":
             break
         elif project_option is "1":
-            directory_name = input("Enter a name for your new Project: ")
-            message = create_folder(directory_name)
-            print(message)
+            project_management()
         elif project_option is "2":
-            datasets.load_data()
-            datasets.autodetect_data_format()
-            datasets.transform_data()
+            load_data()
+            autodetect_data_format()
+            transform_data()
         elif project_option is "3":
-            model.define_model()
-            model.set_optimizer()
-            model.set_data_augmentation()
+            define_model()
+            set_optimizer()
+            set_data_augmentation()
         elif project_option is "4":
-            training.train_model()
-            training.store_model()
+            train_model()
+            store_model()
         elif project_option is "5":
-            evaluation.evaluate_model()
+            evaluate_model()
         elif project_option is "6":
             print("TODO: cycle through the workflow automatically using project meta data")
         else:
             print("Not a valid option")
+
+def project_management():
+    print("1. List all projects with details")
+    print("2. Open project file")
+    print("3. Create new project")
+    print("4. Delete project")
+    print("0. Return to project overview menu")
+
+    while True:
+        project_option = input()
+
+        if project_option is "0": 
+            break
+        elif project_option is "1":
+            list_all_projects()
+        elif project_option is "2":
+            directory_name = input("Enter the name of the projetc you want to open: ")
+            open_project(directory_name)
+        elif project_option is "3":
+            directory_name = input("Enter a name for your new Project: ")
+            message = create_folder(directory_name)
+            print(message)
+        elif project_option is "4":
+            directory_name = input("Enter name of project you want to delete")
+            message = delete_folder(directory_name)
+            print(message)
+        else:
+            print("Not a valid option")
+
 
 
 def run(run_file):
