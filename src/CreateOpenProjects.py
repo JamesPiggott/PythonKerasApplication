@@ -6,21 +6,27 @@ Created on July 7 2018
 This class contains the functions to create and maintain projects
 '''
 import os
+import glob
 
+# List all files in /Projects folder - assuming they are projects
 def list_all_projects():
     print("The following project folder were detected")
+    print(os.listdir('../Projects/'))
+
 
 # Create a new folder for a project
 def create_folder(directory):
     try:
         if not os.path.exists('../Projects/' + directory):
+            print("Anything?")
             os.makedirs('../Projects/' + directory + '/data')
             return "New directory " + directory + " created"
         else:
             return "Directory already exists"
     except OSError:
-        print('Error: Creating directory. ' + directory)
+        print('Error: Opening directory. ' + directory)
 
+# Open specified project and return content of project.txt
 def open_project(directory):
     try:
         if os.path.exists('../Projects/' + directory):

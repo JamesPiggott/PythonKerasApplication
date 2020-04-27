@@ -199,10 +199,10 @@ def project_management():
         elif project_option is "1":
             list_all_projects()
         elif project_option is "2":
-            directory_name = input("Enter the name of the projetc you want to open: ")
+            directory_name = input("Enter the name of the project you want to open: ")
             open_project(directory_name)
         elif project_option is "3":
-            directory_name = input("Enter a name for your new Project: ")
+            directory_name = input("Enter a name for your new project: ")
             message = create_folder(directory_name)
             print(message)
         elif project_option is "4":
