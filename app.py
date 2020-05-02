@@ -15,9 +15,10 @@ from projects.test_projects.KerasStockPrediction import KerasStockPrediction
 from projects.test_projects.KerasZalando import KerasZalando
 from projects.test_projects.KerasExoplanetCNN import KerasExoplanetCNN
 from projects.test_projects.KerasAutoencoder import KerasAutoEncoder
-
-from src.CreateOpenProjects import *
-# from src.CreateOpenProjects import create_folder
+from src.CreateOpenProjects import create_folder
+from src.CreateOpenProjects import list_all_projects
+from src.CreateOpenProjects import open_project
+from src.CreateOpenProjects import delete_folder
 from src.DefineModel import define_model
 from src.DefineModel import set_optimizer
 from src.DefineModel import set_data_augmentation
@@ -32,9 +33,11 @@ from tensorflow.python.client import device_lib
 
 def get_available_gpus():
     local_device_protos = device_lib.list_local_devices()
+    print("")
     print("Your system has the following devices available for Deep Learning")
     print("CPUs: ", [x.name for x in local_device_protos if x.device_type == 'CPU'])
     print("GPUs: ", [x.name for x in local_device_protos if x.device_type == 'GPU'])
+    print("")
 
 def ask_user_for_training_options(option):
     print("")
@@ -95,7 +98,7 @@ def ask_user_for_training_options(option):
         while True:
             print("For 'MNIST-AutoEncoder' 50 epochs are typical")
             epochs = int(input("Enter number of epochs: "))
-            print("Do you wish to save the model to disk? [yes/Yes||no/No]")
+            print("Do you wish to save the model to disk? [yes/Yes||no/No]: ")
             save_model = input("Enter choice: ")
 
             if epochs > 0 and epochs < 100:
@@ -107,60 +110,76 @@ def ask_user_for_training_options(option):
                 print("Please enter a sensible value between 0 and 100")
 
 def example_keras_apps():
-    print("")
-    print("Select application to run (you will be asked to confirm)")
-    print("1. Neural Network (Boston Housing data)")
-    print("2. Convolutional NN (MNIST-Fashion - Zalando")
-    print("3. Recurrent NN (Stock market data)")
-    print("4. Rest API (ImageNet)")
-    print("5. Exoplanet CNN")
-    print("6. MNIST Autoencoder")
-    print("0. Exit application")
+
     run = True
     while run:
-        option = input()
+
+        print("")
+        print("Select application to run (you will be asked to confirm)")
+        print("1. Neural Network (Boston Housing data)")
+        print("2. Convolutional NN (MNIST-Fashion - Zalando")
+        print("3. Recurrent NN (Stock market data)")
+        print("4. Rest API (ImageNet)")
+        print("5. Exoplanet CNN")
+        print("6. MNIST Autoencoder")
+        print("0. Exit application")
+        print("")
+
+        option = input("Choose an option: ")
         if option is "0":
             break
         if option is "1":
+
             options = ask_user_for_training_options(option)
-            keras_start = KerasStart()
-            keras_start.start(options[0], options[1])
-            run = False
+            confirmation = input("You will be training for " + str(options[0]) + " epochs. Are you certain? [yes/Yes||no/No]: ")
+
+            if confirmation in ['yes', 'Yes']:
+                keras_start = KerasStart()
+                keras_start.start(options[0], options[1])
+
         if option is "2":
+
             options = ask_user_for_training_options(option)
             zalando = KerasZalando()
             zalando.start(options[0], options[1])
-            run = False
+
         if option is "3":
+
             stocks = KerasStockPrediction()
             stocks.start()
-            run = False
+
         if option is "4":
             run("Projects/Test_projects/KerasRestApi.py")
 
         if option is "5":
+
             options = ask_user_for_training_options(option)
             exoplanet = KerasExoplanetCNN()
             exoplanet.start(options[0], options[1])
-            run = False
+
         if option is "6":
+
             options = ask_user_for_training_options(option)
             autoencoder = KerasAutoEncoder()
             autoencoder.start(options[0], options[1])
-            run = False
 
 
 def new_keras_project():
-    print("1. Project management")
-    print("2. Load data set")
-    print("3. Define model")
-    print("4. Train model using data set")
-    print("5. Evaluate trained model")
-    print("6. Perform steps 2 through 6 in sequence")
-    print("0. Return to main menu")
 
     while True:
-        project_option = input()
+
+        print("")
+        print("1. Project management")
+        print("2. Load data set")
+        print("3. Define model")
+        print("4. Train model using data set")
+        print("5. Evaluate trained model")
+        print("6. Perform steps 2 through 6 in sequence")
+        print("0. Return to main menu")
+        print("")
+
+        project_option = input("Choose an option: ")
+        print("")
 
         if project_option is "0":
             break
@@ -185,33 +204,52 @@ def new_keras_project():
             print("Not a valid option")
 
 def project_management():
-    print("1. List all projects with details")
-    print("2. Open project file")
-    print("3. Create new project")
-    print("4. Delete project")
-    print("0. Return to project overview menu")
 
     while True:
-        project_option = input()
+
+        print("")
+        print("1. List all projects")
+        print("2. Open project file")
+        print("3. Create new project")
+        print("4. Delete project")
+        print("0. Return to project overview menu")
+        print("")
+
+        project_option = input("Choose an option: ")
+        print("")
 
         if project_option is "0": 
             break
         elif project_option is "1":
-            list_all_projects()
+
+            print()
+            print("The following project folder were detected")
+            projects = list_all_projects()
+            print()
+            for project in projects:
+                print(" # " + project)
+            print()
+
         elif project_option is "2":
+
             directory_name = input("Enter the name of the project you want to open: ")
-            open_project(directory_name)
+            message, file = open_project(directory_name)
+            print(message + " " + file.read())
+
         elif project_option is "3":
+
             directory_name = input("Enter a name for your new project: ")
-            message = create_folder(directory_name)
+            message, file = create_folder(directory_name)
             print(message)
+
         elif project_option is "4":
-            directory_name = input("Enter name of project you want to delete")
+
+            directory_name = input("Enter name of project you want to delete: ")
             message = delete_folder(directory_name)
             print(message)
+
         else:
             print("Not a valid option")
-
 
 
 def run(run_file):
@@ -220,6 +258,7 @@ def run(run_file):
 
 
 def main():
+
     print(" ")
     print("###################################################")
     print("####  Welcome to the Keras Deep learning tool   ###")
@@ -227,13 +266,18 @@ def main():
     print(" ")
 
     while True:
-        print(" ")
+
+        print("")
         print("Input an option below")
         print("1. Select example projects")
         print("2. Open or Create Keras project")
         print("3. Detect hardware available")
         print("0. Exit application")
-        option = input()
+        print("")
+
+        option = input("Choose an option: ")
+        print("")
+
         if option is "0":
             break
         if option is "1":
