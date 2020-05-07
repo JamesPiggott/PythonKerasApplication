@@ -29,6 +29,14 @@ def open_project(directory):
     try:
         if os.path.exists('../Projects/' + directory):
             file = open('../Projects/' + directory + "/project.txt", "r")
+
+            myvars = {}
+            for line in file:
+                name, var = line.partition("=")[::2]
+                myvars[name.strip()] = str(var)
+
+            # TODO - return project object
+
             return "Project file opened", file
         else:
             return "Project file could not be opened", None

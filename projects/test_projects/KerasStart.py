@@ -17,7 +17,7 @@ class KerasStart:
         model = Sequential()
         model.add(Dense(1, input_shape=(nFeatures,), activation='linear'))  # linear, tanh, relu, sigmoid
 
-        # Configure the learning process (optimizer, loss function
+        # Configure the learning process (optimizer, loss function)
         model.compile(optimizer='rmsprop', loss='mse', metrics=['mse', 'mae'])
 
         # Train the model 1000 times over with the same input - verbose can be {0, 1, 2}

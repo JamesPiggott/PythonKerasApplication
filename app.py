@@ -175,6 +175,7 @@ def new_keras_project():
         print("4. Train model using data set")
         print("5. Evaluate trained model")
         print("6. Perform steps 2 through 6 in sequence")
+        print("7. Deployment")
         print("0. Return to main menu")
         print("")
 
@@ -234,7 +235,7 @@ def project_management():
 
             directory_name = input("Enter the name of the project you want to open: ")
             message, file = open_project(directory_name)
-            print(message + " " + file.read())
+
 
         elif project_option is "3":
 
