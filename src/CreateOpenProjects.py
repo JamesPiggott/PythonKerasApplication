@@ -9,6 +9,8 @@ import os
 import glob
 import shutil
 
+from .project import Project
+
 # List all files in /Projects folder - assuming they are projects
 def list_all_projects():
     return os.listdir('../Projects/')
@@ -35,8 +37,9 @@ def open_project(directory):
                 name, var = line.partition("=")[::2]
                 myvars[name.strip()] = str(var)
 
-            # TODO - return project object
-
+            project = Project()
+            project.parse_input(myvars)
+  
             return "Project file opened", file
         else:
             return "Project file could not be opened", None
