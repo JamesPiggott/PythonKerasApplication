@@ -9,8 +9,6 @@ It uses Keras as a Deep Learning framework.
 import sys
 
 from projects.test_projects.KerasStart import KerasStart
-# from projects.test_projects.KerasRestApi import KerasRestApi
-# from projects.test_projects.KerasRestApiSimpleRequest import KerasRestApiSimpleRequest
 from projects.test_projects.KerasStockPrediction import KerasStockPrediction
 from projects.test_projects.KerasZalando import KerasZalando
 from projects.test_projects.KerasExoplanetCNN import KerasExoplanetCNN
@@ -149,7 +147,8 @@ def example_keras_apps():
             stocks.start()
 
         if option is "4":
-            run("Projects/Test_projects/KerasRestApi.py")
+            # run("Projects/Test_projects/KerasRestApi.py")
+            print("NA")
 
         if option is "5":
 

@@ -1,0 +1,52 @@
+FloatLayout:
+    id: layout
+    AppMenu:
+        id: app_menu
+        top: root.height
+        cancel_handler_widget: layout
+
+        AppMenuTextItem:
+            text: "System"
+            ContextMenu:
+                ContextMenuTextItem:
+                    text: "Test GPUs"
+                    on_release: app.get_available_gpus()
+                ContextMenuTextItem:
+                    text: "Exit"
+                    on_press: app.stop() 
+
+        AppMenuTextItem:
+            text: "Project"
+            ContextMenu:
+                ContextMenuTextItem:
+                    text: "Item #11"
+
+        AppMenuTextItem:
+            text: "Data"
+            ContextMenu:
+                ContextMenuTextItem:
+                    text: "Item #11"
+
+        AppMenuTextItem:
+            text: "Modelling"
+            ContextMenu:
+                ContextMenuTextItem:
+                    text: "Item #11"
+
+        AppMenuTextItem:
+            text: "Training"
+            ContextMenu:
+                ContextMenuTextItem:
+                    text: "Item #11"
+
+        AppMenuTextItem:
+            text: "Testing"
+            ContextMenu:
+                ContextMenuTextItem:
+                    text: "Item #11"
+
+        AppMenuTextItem:
+            text: "Deployment"
+            ContextMenu:
+                ContextMenuTextItem:
+                    text: "Item #11"
