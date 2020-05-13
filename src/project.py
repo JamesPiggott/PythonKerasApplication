@@ -1,3 +1,6 @@
+from data import Data
+
+
 class Project:
 
     name = ""
@@ -6,6 +9,8 @@ class Project:
     optimizer = ""
     batch_size = ""
     model_format = ""
+
+    data = Data
 
     """Represent the high-level definition of a Project"""
     def __init__(self):
@@ -17,26 +22,25 @@ class Project:
         self.model_format = ""
 
     def parse_input(self, file):
+        print("")
         for key in file.keys():
-            print(key + " " + file[key])
-
-            if key is "name":
+            if key == "name":
                 self.name = key
                 print(key + " " + file[key])
-            if key is "epochs":
+            elif key == "epochs":
                 self.epochs = key
                 print(key + " " + file[key])
-            if key is "loss_function":
+            elif key == "loss_function":
                 self.loss_function = key
                 print(key + " " + file[key])
-            if key is "optimizer":
+            elif key == "optimizer":
                 self.optimizer = key
                 print(key + " " + file[key])
-            if key is "batch_size":
+            elif key == "batch_size":
                 self.batch_size = key
                 print(key + " " + file[key])
-            if key is "model_format":
+            elif key == "model_format":
                 self.model_format = key
                 print(key + " " + file[key])
             else:
-                print("Undefined keyword")
+                print(key + " is an undefined keyword")

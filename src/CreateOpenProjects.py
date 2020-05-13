@@ -40,7 +40,7 @@ def open_project(directory):
             project = Project()
             project.parse_input(myvars)
   
-            return "Project file opened", file
+            return "Project file opened", project
         else:
             return "Project file could not be opened", None
     except OSError:
