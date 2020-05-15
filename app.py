@@ -192,9 +192,15 @@ class App:
             elif project_option is "1":
                 self.project_management()
             elif project_option is "2":
-                self.project.data.load_data()
-                self.project.data.autodetect_data_format()
-                self.project.data.transform_data()
+
+                # https://storage.googleapis.com/mledu-datasets/cats_and_dogs_filtered.zip
+                data_url = input("Enter the URL for the location of the data: ") 
+                data_location = "../Projects/" + self.project.name + "/data/data"
+
+                self.project.data.download_url("", data_url, data_location)
+                self.project.data.load_data("")
+                self.project.data.autodetect_data_format("")
+                self.project.data.transform_data("")
             elif project_option is "3":
                 define_model()
                 set_optimizer()
@@ -240,9 +246,7 @@ class App:
 
                 directory_name = input("Enter the name of the project you want to open: ")
                 message, self.project = open_project(directory_name)
-
-                print("Testing: " + self.project.name)
-
+                print("Project name: " + self.project.name)
 
             elif project_option is "3":
 

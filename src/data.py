@@ -1,3 +1,5 @@
+import requests 
+
 class Data:
 
 
@@ -9,7 +11,12 @@ class Data:
     This class contains the functions to that will analyze and transform the data set for use with Keras.
     '''
 
-        # First simply download some test data into [Projects/project_name/data] as PoC
+    def download_url(self, url, save_path, chunk_size=128):
+        r = requests.get(url, stream=True)
+        with open(save_path, 'wb') as fd:
+            for chunk in r.iter_content(chunk_size=chunk_size):
+                fd.write(chunk)
+
     def load_data(self):
         print("Loading data for project: ")
 

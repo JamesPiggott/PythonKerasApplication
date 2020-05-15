@@ -1,4 +1,4 @@
-from data import Data
+from .data import Data
 
 
 class Project:
@@ -25,22 +25,22 @@ class Project:
         print("")
         for key in file.keys():
             if key == "name":
-                self.name = key
+                self.name = file[key]
                 print(key + " " + file[key])
             elif key == "epochs":
-                self.epochs = key
+                self.epochs = file[key]
                 print(key + " " + file[key])
             elif key == "loss_function":
-                self.loss_function = key
+                self.loss_function = file[key]
                 print(key + " " + file[key])
             elif key == "optimizer":
-                self.optimizer = key
+                self.optimizer = file[key]
                 print(key + " " + file[key])
             elif key == "batch_size":
-                self.batch_size = key
+                self.batch_size = file[key]
                 print(key + " " + file[key])
             elif key == "model_format":
-                self.model_format = key
+                self.model_format = file[key]
                 print(key + " " + file[key])
             else:
                 print(key + " is an undefined keyword")
