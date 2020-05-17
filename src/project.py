@@ -4,6 +4,7 @@ from .data import Data
 class Project:
 
     name = ""
+    download_url = ""
     epochs = ""
     loss_function = ""
     optimizer = ""
@@ -15,6 +16,7 @@ class Project:
     """Represent the high-level definition of a Project"""
     def __init__(self):
         self.name = ""
+        self.download_url = ""
         self.epochs = ""
         self.loss_function = ""
         self.optimizer = ""
@@ -26,6 +28,9 @@ class Project:
         for key in file.keys():
             if key == "name":
                 self.name = file[key]
+                print(key + " " + file[key])
+            elif key == "download_url":
+                self.download_url = file[key]
                 print(key + " " + file[key])
             elif key == "epochs":
                 self.epochs = file[key]

@@ -1,5 +1,5 @@
 import requests 
-
+import zipfile
 class Data:
 
 
@@ -16,6 +16,12 @@ class Data:
         with open(save_path, 'wb') as fd:
             for chunk in r.iter_content(chunk_size=chunk_size):
                 fd.write(chunk)
+
+    def unzip_data_file(self, save_path):
+        local_zip = save_path
+        zip_ref = zipfile.ZipFile(local_zip, 'r')
+        zip_ref.extractall(save_path + "../../")
+        zip_ref.close()
 
     def load_data(self):
         print("Loading data for project: ")

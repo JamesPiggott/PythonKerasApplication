@@ -35,6 +35,13 @@ class App:
 
     project = Project
 
+    def get_user_permission(self, request_message):
+        reply = input(request_message + " ")
+        if reply in ['y', 'Y', 'yes', 'Yes', 'YES']:
+            return True
+        if reply in ['n', 'N', 'no', 'No', 'NO']:
+            return False   
+
     def get_available_gpus(self):
         local_device_protos = device_lib.list_local_devices()
         print("")
@@ -193,11 +200,18 @@ class App:
                 self.project_management()
             elif project_option is "2":
 
-                # https://storage.googleapis.com/mledu-datasets/cats_and_dogs_filtered.zip
-                data_url = input("Enter the URL for the location of the data: ") 
-                data_location = "../Projects/" + self.project.name + "/data/data"
+                data_location = "../Projects/" + self.project.name[:-1] + "/data/data"
 
-                self.project.data.download_url("", data_url, data_location)
+                if self.get_user_permission("Do you want to download a dataset?"):
+                    if self.get_user_permission("Do you wish to use the url defined in project.txt?"):
+                        self.project.data.download_url("", self.project.download_url[:-1], data_location)
+                    else:
+                        data_url = input("Enter the URL for the location of the data: ") 
+                        self.project.data.download_url("", data_url, data_location)
+
+                if self.get_user_permission("Do you want to unzip the dataset?"):
+                    self.project.data.unzip_data_file("", data_location)
+
                 self.project.data.load_data("")
                 self.project.data.autodetect_data_format("")
                 self.project.data.transform_data("")
