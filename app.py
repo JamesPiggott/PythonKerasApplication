@@ -17,9 +17,8 @@ from src.CreateOpenProjects import create_folder
 from src.CreateOpenProjects import list_all_projects
 from src.CreateOpenProjects import open_project
 from src.CreateOpenProjects import delete_folder
-from src.DefineModel import define_model
-from src.DefineModel import set_optimizer
-from src.DefineModel import set_data_augmentation
+
+
 # from src.AnalyzeDataSet import load_data
 # from src.AnalyzeDataSet import autodetect_data_format
 # from src.AnalyzeDataSet import transform_data
@@ -28,12 +27,14 @@ from src.TrainModel import store_model
 from src.EvaluateModel import evaluate_model
 
 from src.project import Project
+from src.model import Model
 
 from tensorflow.python.client import device_lib
 
 class App:
 
     project = Project
+    model = Model
 
     def get_user_permission(self, request_message):
         reply = input(request_message + " ")
@@ -201,6 +202,7 @@ class App:
             elif project_option is "2":
 
                 data_location = "../Projects/" + self.project.name[:-1] + "/data/data"
+                data_location2 = "../Projects/" + self.project.name[:-1] + "/data"
 
                 if self.get_user_permission("Do you want to download a dataset?"):
                     if self.get_user_permission("Do you wish to use the url defined in project.txt?"):
@@ -212,13 +214,20 @@ class App:
                 if self.get_user_permission("Do you want to unzip the dataset?"):
                     self.project.data.unzip_data_file("", data_location)
 
-                self.project.data.load_data("")
+                self.project.data.load_data("", data_location2)
+
                 self.project.data.autodetect_data_format("")
+                
                 self.project.data.transform_data("")
             elif project_option is "3":
-                define_model()
-                set_optimizer()
-                set_data_augmentation()
+
+                self.model = Model()
+
+                self.model.define_model()
+                
+                # set_optimizer()
+
+                # set_data_augmentation()
             elif project_option is "4":
                 train_model()
                 store_model()
@@ -284,6 +293,7 @@ class App:
 
 
     def main(self):
+        # sys.stderr.write("\x1b[2J\x1b[H")
 
         print(" ")
         print("###################################################")
