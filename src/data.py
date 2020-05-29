@@ -20,16 +20,11 @@ class Data:
     """Represent the high-level definition of a Project"""
     def __init__(self):
         print("Init")
-        # global validation_cats_dir
-        # global validation_dogs_dir
-        # global train_cat_fnames
-        # global train_dog_fnames
-        # train_cats_dir = ""
-        # train_dogs_dir = ""
-        validation_cats_dir = ""
-        validation_dogs_dir = ""
-        train_cat_fnames = ""
-        train_dog_fnames = ""
+
+        self.validation_cats_dir = ""
+        self.validation_dogs_dir = ""
+        self.train_cat_fnames = ""
+        self.train_dog_fnames = ""
 
 
     def download_url(self, url, save_path, chunk_size=128):
@@ -62,17 +57,17 @@ class Data:
         print(validation_cats_dir)
 
         # List categories
-        self.train_cat_fnames = os.listdir( train_cats_dir )
-        self.train_dog_fnames = os.listdir( train_dogs_dir )
+        train_cat_fnames = os.listdir( train_cats_dir )
+        train_dog_fnames = os.listdir( train_dogs_dir )
 
-        print(self.train_cat_fnames[:10])
-        print(self.train_dog_fnames[:10])
+        print(train_cat_fnames[:10])
+        print(train_dog_fnames[:10])
 
         print('total training cat images :', len(os.listdir(      train_cats_dir ) ))
         print('total training dog images :', len(os.listdir(      train_dogs_dir ) ))
 
-        print('total validation cat images :', len(os.listdir( self.validation_cats_dir ) ))
-        print('total validation dog images :', len(os.listdir( self.validation_dogs_dir ) ))
+        print('total validation cat images :', len(os.listdir( validation_cats_dir ) ))
+        print('total validation dog images :', len(os.listdir( validation_dogs_dir ) ))
 
         print("Loading data for project: ")
 
