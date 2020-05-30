@@ -22,12 +22,13 @@ from src.CreateOpenProjects import delete_folder
 # from src.AnalyzeDataSet import load_data
 # from src.AnalyzeDataSet import autodetect_data_format
 # from src.AnalyzeDataSet import transform_data
-from src.TrainModel import train_model
-from src.TrainModel import store_model
+# from src.TrainModel import train_model
+# from src.TrainModel import store_model
 from src.EvaluateModel import evaluate_model
 
 from src.project import Project
 from src.model import Model
+from src.train import Train
 
 from tensorflow.python.client import device_lib
 
@@ -35,6 +36,7 @@ class App:
 
     project = Project
     model = Model
+    train = Train
 
     def get_user_permission(self, request_message):
         reply = input(request_message + " ")
@@ -229,8 +231,11 @@ class App:
 
                 # set_data_augmentation()
             elif project_option is "4":
-                train_model()
-                store_model()
+
+                self.train = Train(self.model, self.project.data)
+
+                self.train.train_model()
+                # self.train.store_model()
             elif project_option is "5":
                 evaluate_model()
             elif project_option is "6":

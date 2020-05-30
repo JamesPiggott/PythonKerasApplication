@@ -2,7 +2,8 @@ import requests
 import zipfile
 import os
 class Data:
-
+    train_dir = ""
+    validation_dir = ""
     train_cats_dir = ""
     train_dogs_dir = ""
     validation_cats_dir = ""
@@ -21,6 +22,8 @@ class Data:
     def __init__(self):
         print("Init")
 
+        self.train_dir = ""
+        self.validation_dir = ""
         self.validation_cats_dir = ""
         self.validation_dogs_dir = ""
         self.train_cat_fnames = ""
