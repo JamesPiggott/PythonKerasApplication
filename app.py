@@ -24,11 +24,12 @@ from src.CreateOpenProjects import delete_folder
 # from src.AnalyzeDataSet import transform_data
 # from src.TrainModel import train_model
 # from src.TrainModel import store_model
-from src.EvaluateModel import evaluate_model
+# from src.EvaluateModel import evaluate_model
 
 from src.project import Project
 from src.model import Model
 from src.train import Train
+from src.evaluate import Evaluate
 
 from tensorflow.python.client import device_lib
 
@@ -37,6 +38,7 @@ class App:
     project = Project
     model = Model
     train = Train
+    evaluate = Evaluate
 
     def get_user_permission(self, request_message):
         reply = input(request_message + " ")
@@ -232,12 +234,17 @@ class App:
                 # set_data_augmentation()
             elif project_option is "4":
 
-                self.train = Train(self.model, self.project.data)
+                self.train = Train(self.model, self.project.data, self.project)
 
-                self.train.train_model()
-                # self.train.store_model()
+                self.train.train_model(self.project)
+
+                self.train.store_model("../Projects/" + self.project.name[:-1]) 
             elif project_option is "5":
-                evaluate_model()
+
+                self.evaluate = Evaluate(self.model)
+
+                self.evaluate.evaluate_model()
+
             elif project_option is "6":
                 print("TODO: cycle through the workflow automatically using project meta data")
             else:
