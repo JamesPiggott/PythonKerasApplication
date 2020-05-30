@@ -1,5 +1,6 @@
 from .model import Model
 from .data import Data
+import tensorflow as tf
 
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
@@ -24,19 +25,19 @@ class Train:
         # --------------------
         # Flow training images in batches of 20 using train_datagen generator
         # --------------------
-        train_generator = train_datagen.flow_from_directory(self.data.train_dir,
+        train_generator = train_datagen.flow_from_directory("../" + self.data.train_dir,
                                                             batch_size=20,
                                                             class_mode='binary',
                                                             target_size=(150, 150))     
         # --------------------
         # Flow validation images in batches of 20 using test_datagen generator
         # --------------------
-        validation_generator =  test_datagen.flow_from_directory(self.data.validation_dir,
+        validation_generator =  test_datagen.flow_from_directory("../" + self.data.validation_dir,
                                                                 batch_size=20,
                                                                 class_mode  = 'binary',
                                                                 target_size = (150, 150))
 
-        self.history = self.model.fit(train_generator,
+        self.history = self.model.model.fit(train_generator,
                                     validation_data=validation_generator,
                                     steps_per_epoch=100,
                                     epochs=15,

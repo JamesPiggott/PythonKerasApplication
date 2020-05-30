@@ -227,7 +227,7 @@ class App:
 
                 self.model.define_model()
                 
-                # set_optimizer()
+                self.model.set_optimizer()
 
                 # set_data_augmentation()
             elif project_option is "4":
