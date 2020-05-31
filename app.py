@@ -13,28 +13,20 @@ from projects.test_projects.KerasStockPrediction import KerasStockPrediction
 from projects.test_projects.KerasZalando import KerasZalando
 from projects.test_projects.KerasExoplanetCNN import KerasExoplanetCNN
 from projects.test_projects.KerasAutoencoder import KerasAutoEncoder
-from src.CreateOpenProjects import create_folder
-from src.CreateOpenProjects import list_all_projects
-from src.CreateOpenProjects import open_project
-from src.CreateOpenProjects import delete_folder
 
 
-# from src.AnalyzeDataSet import load_data
-# from src.AnalyzeDataSet import autodetect_data_format
-# from src.AnalyzeDataSet import transform_data
-# from src.TrainModel import train_model
-# from src.TrainModel import store_model
-# from src.EvaluateModel import evaluate_model
-
+from src.manager import Manager
 from src.project import Project
 from src.model import Model
 from src.train import Train
 from src.evaluate import Evaluate
 
+
 from tensorflow.python.client import device_lib
 
 class App:
 
+    manager = Manager
     project = Project
     model = Model
     train = Train
@@ -252,6 +244,8 @@ class App:
 
     def project_management(self):
 
+        self.manager = Manager()
+
         while True:
 
             print("")
@@ -271,7 +265,7 @@ class App:
 
                 print()
                 print("The following project folder were detected")
-                projects = list_all_projects()
+                projects = self.manager.list_all_projects()
                 print()
                 for project in projects:
                     print(" # " + project)
@@ -280,19 +274,19 @@ class App:
             elif project_option is "2":
 
                 directory_name = input("Enter the name of the project you want to open: ")
-                message, self.project = open_project(directory_name)
+                message, self.project = self.manager.open_project(directory_name)
                 print("Project name: " + self.project.name)
 
             elif project_option is "3":
 
                 directory_name = input("Enter a name for your new project: ")
-                message = create_folder(directory_name)
+                message = self.manager.create_folder(directory_name)
                 print(message)
 
             elif project_option is "4":
 
                 directory_name = input("Enter name of project you want to delete: ")
-                message = delete_folder(directory_name)
+                message = self.manager.delete_folder(directory_name)
                 print(message)
 
             else:
