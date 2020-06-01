@@ -1,0 +1,7 @@
+name=fashion_mnist
+download_url=
+epochs=10
+loss_function=CategoricalCrossentropy
+optimizer=adam
+batch_size=64
+model_format=h5

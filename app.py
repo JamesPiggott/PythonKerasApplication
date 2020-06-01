@@ -8,11 +8,14 @@ It uses Keras as a Deep Learning framework.
 '''
 import sys
 
-from projects.test_projects.KerasStart import KerasStart
-from projects.test_projects.KerasStockPrediction import KerasStockPrediction
-from projects.test_projects.KerasZalando import KerasZalando
-from projects.test_projects.KerasExoplanetCNN import KerasExoplanetCNN
-from projects.test_projects.KerasAutoencoder import KerasAutoEncoder
+# from projects.test_projects.KerasStart import KerasStart
+# from projects.test_projects.KerasStockPrediction import KerasStockPrediction
+# from projects.test_projects.KerasZalando import KerasZalando
+# from projects.test_projects.KerasExoplanetCNN import KerasExoplanetCNN
+# from projects.test_projects.KerasAutoencoder import KerasAutoEncoder
+
+
+from example_projects.fashion_mnist.fashion_mnist import FashionMnist
 
 
 from src.manager import Manager
@@ -138,39 +141,41 @@ class App:
                 break
             if option is "1":
 
-                options = self.ask_user_for_training_options(option)
-                confirmation = input("You will be training for " + str(options[0]) + " epochs. Are you certain? [yes/Yes||no/No]: ")
+                fashion = FashionMnist()
 
-                if confirmation in ['yes', 'Yes']:
-                    keras_start = KerasStart()
-                    keras_start.start(options[0], options[1])
+                # options = self.ask_user_for_training_options(option)
+                # confirmation = input("You will be training for " + str(options[0]) + " epochs. Are you certain? [yes/Yes||no/No]: ")
 
-            if option is "2":
+                # if confirmation in ['yes', 'Yes']:
+                #     keras_start = KerasStart()
+                #     keras_start.start(options[0], options[1])
 
-                options = self.ask_user_for_training_options(option)
-                zalando = KerasZalando()
-                zalando.start(options[0], options[1])
+            # if option is "2":
 
-            if option is "3":
+            #     options = self.ask_user_for_training_options(option)
+            #     zalando = KerasZalando()
+            #     zalando.start(options[0], options[1])
 
-                stocks = KerasStockPrediction()
-                stocks.start()
+            # if option is "3":
 
-            if option is "4":
-                # run("Projects/Test_projects/KerasRestApi.py")
-                print("NA")
+            #     stocks = KerasStockPrediction()
+            #     stocks.start()
 
-            if option is "5":
+            # if option is "4":
+            #     # run("Projects/Test_projects/KerasRestApi.py")
+            #     print("NA")
 
-                options = self.ask_user_for_training_options(option)
-                exoplanet = KerasExoplanetCNN()
-                exoplanet.start(options[0], options[1])
+            # if option is "5":
 
-            if option is "6":
+            #     options = self.ask_user_for_training_options(option)
+            #     exoplanet = KerasExoplanetCNN()
+            #     exoplanet.start(options[0], options[1])
 
-                options = self.ask_user_for_training_options(option)
-                autoencoder = KerasAutoEncoder()
-                autoencoder.start(options[0], options[1])
+            # if option is "6":
+
+            #     options = self.ask_user_for_training_options(option)
+            #     autoencoder = KerasAutoEncoder()
+            #     autoencoder.start(options[0], options[1])
 
 
     def new_keras_project(self):
