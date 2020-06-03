@@ -1,4 +1,4 @@
-name=fashion_mnist
+name=boston_housing
 download_url=
 epochs=1
 loss_function=CategoricalCrossentropy

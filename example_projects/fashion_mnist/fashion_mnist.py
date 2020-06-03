@@ -55,11 +55,11 @@ class FashionMnist:
 
         self.load_data()
         self.convert_data()
-        self.define_model(10, 64)
+        self.define_model(1, 64)
         self.set_optimizer()
         self.train_model()
         self.evaluate_model()
-        self.store_model("")
+        self.store_model("example_projects/fashion_mnist/")
 
 
     def load_data(self):
@@ -114,7 +114,7 @@ class FashionMnist:
             tf.keras.layers.Dense(128, activation='linear'),
             tf.keras.layers.LeakyReLU(alpha=0.1),
             tf.keras.layers.Dropout(0.3),
-            tf.keras.layers.Dense(num_classes, activation='softmax')
+            tf.keras.layers.Dense(10, activation='softmax')
         ])
 
         self.model.summary()
@@ -135,8 +135,6 @@ class FashionMnist:
         val_acc  = self.history.history[ 'val_accuracy' ]
         loss     = self.history.history[    'loss' ]
         val_loss = self.history.history['val_loss' ]
-
-
 
         #-----------------------------------------------------------
         # Retrieve a list of list results on training and test data
@@ -166,4 +164,4 @@ class FashionMnist:
     def store_model(self, path):
         print("Store the model")
         saved_model_path = "/my_model.h5"
-        self.model.model.save(path + saved_model_path)
+        self.model.save(path + saved_model_path)

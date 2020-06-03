@@ -14,7 +14,7 @@ import sys
 # from projects.test_projects.KerasExoplanetCNN import KerasExoplanetCNN
 # from projects.test_projects.KerasAutoencoder import KerasAutoEncoder
 
-
+from example_projects.boston_housing.boston_housing import BostonHousing
 from example_projects.fashion_mnist.fashion_mnist import FashionMnist
 
 
@@ -141,7 +141,7 @@ class App:
                 break
             if option is "1":
 
-                fashion = FashionMnist()
+                boston = BostonHousing()
 
                 # options = self.ask_user_for_training_options(option)
                 # confirmation = input("You will be training for " + str(options[0]) + " epochs. Are you certain? [yes/Yes||no/No]: ")
@@ -150,11 +150,9 @@ class App:
                 #     keras_start = KerasStart()
                 #     keras_start.start(options[0], options[1])
 
-            # if option is "2":
+            if option is "2":
 
-            #     options = self.ask_user_for_training_options(option)
-            #     zalando = KerasZalando()
-            #     zalando.start(options[0], options[1])
+                fashion = FashionMnist()
 
             # if option is "3":
 
