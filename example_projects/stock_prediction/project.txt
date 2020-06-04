@@ -1,0 +1,7 @@
+name=stock_prediction
+download_url=
+epochs=1
+loss_function=
+optimizer=
+batch_size=
+model_format=h5
