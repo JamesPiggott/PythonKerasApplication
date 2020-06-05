@@ -1,20 +1,25 @@
-# PythonKerasApplication
+# PythonAutoKeras
 
-This application is meant to showcase useful examples of applied Deep Learning with the Keras interface. In time it can also be used on new situations.
+As the name would suggest AutoKeras allows developers to automatically create Deep Learning models using the Keras API. In essence this application provides project management. All relevant details are stored on a project file which can be re-used. Should the need arise the project file can be read without human intervention.
 
-Initially it can be used on Convolutional Neural Networks (CNN) and Recurrent Neural Networks (RNN)
+To jumpstart your Deep Learning project several showcase examples have bene implemented using the Keras API. These examples proof the generilizations that are possible. AutoKeras is written with Python 3 and adheres to the OOP paradigm. Tensorflow 2 is used which now provides the Keras API by default.
 
-Start the application
+Currently this project is in early-alpha development and is nowhere near feature complete. In time a GUI using Kivy, use of Docker containers and dataset versioning will be implemented. It is possible to transform models built using Keras to TensorFlow Lite for mobile use. Models can also be deployed for testing on REST server.
 
-python MainApplication.py
+## To start AutoKeras
 
 Command to install dependencies
 $ pip3 install -r requirements.txt
 
-## Example projects
-In addition to the basic Keras app there are a number of showcase applications. These integrate Keras into everyday applications such as image recognition, a game and stock market app.
+Command to start the application
+$ python app.py
 
-1. Simple REST API app: allow user to train and test an image.
-2. Simple RNN stock market app.
-3. Simple game AI.
-4. Simple graph and interface app.
+## Showcase projects
+
+The following showcase application are available.
+
+1. Neural Network using Boston Housing data.
+2. Convolutional Neural Network using Fashion MNIST.
+3. Recurrent Neural Network using stock market data.
+4. MNIST Autoencoder.
+5. Advanced Convolutional Neural Network for Exoplanet detection
