@@ -1,11 +1,3 @@
-'''
-Created on April 7 2018
-
-@author: James Piggott
-
-Python application that can be used to cycle through workflow of a Deep Learning modelling task.
-It uses Keras as a Deep Learning framework.
-'''
 import sys
 
 from example_projects.boston_housing.boston_housing import BostonHousing
@@ -14,7 +6,7 @@ from example_projects.stock_prediction.stock_prediction import StockPrediction
 from example_projects.auto_encoder.auto_encoder import AutoEncoder
 from example_projects.exoplanet_detection.exoplanet_detection import ExoplanetDetection
 
-
+from src.system import System
 from src.manager import Manager
 from src.project import Project
 from src.model import Model
@@ -22,10 +14,9 @@ from src.train import Train
 from src.evaluate import Evaluate
 
 
-from tensorflow.python.client import device_lib
-
 class App:
 
+    system = System
     manager = Manager
     project = Project
     model = Model
@@ -39,13 +30,6 @@ class App:
         if reply in ['n', 'N', 'no', 'No', 'NO']:
             return False   
 
-    def get_available_gpus(self):
-        local_device_protos = device_lib.list_local_devices()
-        print("")
-        print("Your system has the following devices available for Deep Learning")
-        print("CPUs: ", [x.name for x in local_device_protos if x.device_type == 'CPU'])
-        print("GPUs: ", [x.name for x in local_device_protos if x.device_type == 'GPU'])
-        print("")
 
     def ask_user_for_training_options(self, option):
         print("")
@@ -315,7 +299,9 @@ class App:
             if option is "2":
                 self.new_keras_project()
             if option is "3":
-                self.get_available_gpus()
+                self.system = System()
+                self.system.get_available_gpus()
+                self.system.check_docker_availability()
         sys.exit()
 
 
