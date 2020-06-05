@@ -11,6 +11,7 @@ import sys
 from example_projects.boston_housing.boston_housing import BostonHousing
 from example_projects.fashion_mnist.fashion_mnist import FashionMnist
 from example_projects.stock_prediction.stock_prediction import StockPrediction
+from example_projects.auto_encoder.auto_encoder import AutoEncoder
 
 
 from src.manager import Manager
@@ -125,9 +126,9 @@ class App:
             print("1. Neural Network (Boston Housing data)")
             print("2. Convolutional NN (MNIST-Fashion - Zalando")
             print("3. Recurrent NN (Stock market data)")
-            print("4. Rest API (ImageNet)")
+            print("4. MNIST Autoencoder")
             print("5. Exoplanet CNN")
-            print("6. MNIST Autoencoder")
+            print("6. Rest API (ImageNet)")
             print("0. Exit application")
             print("")
 
@@ -146,10 +147,9 @@ class App:
 
                 stock = StockPrediction()
 
+            if option is "4":
 
-            # if option is "4":
-            #     # run("Projects/Test_projects/KerasRestApi.py")
-            #     print("NA")
+                autoencoder = AutoEncoder()
 
             # if option is "5":
 
@@ -158,10 +158,8 @@ class App:
             #     exoplanet.start(options[0], options[1])
 
             # if option is "6":
-
-            #     options = self.ask_user_for_training_options(option)
-            #     autoencoder = KerasAutoEncoder()
-            #     autoencoder.start(options[0], options[1])
+            #     # run("Projects/Test_projects/KerasRestApi.py")
+            #     print("NA")
 
 
     def new_keras_project(self):
