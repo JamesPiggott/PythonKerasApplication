@@ -2,18 +2,12 @@ import tensorflow as tf
 
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
-# import keras
 import numpy as np
-# import matplotlib.pyplot as plt
 
-# Load the Fashion-MNIST imgaes using Keras/datasets
 from keras.datasets import fashion_mnist
 from keras.utils import to_categorical
 from sklearn.model_selection import train_test_split
-# from keras.models import Sequential
-# from keras.layers import Dense,Dropout,Flatten
-# from keras.layers import Conv2D, MaxPooling2D
-# from keras.layers.advanced_activations import LeakyReLU
+
 
 from tensorflow.keras.optimizers import Adam
 

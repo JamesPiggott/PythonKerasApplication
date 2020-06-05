@@ -12,6 +12,7 @@ from example_projects.boston_housing.boston_housing import BostonHousing
 from example_projects.fashion_mnist.fashion_mnist import FashionMnist
 from example_projects.stock_prediction.stock_prediction import StockPrediction
 from example_projects.auto_encoder.auto_encoder import AutoEncoder
+from example_projects.exoplanet_detection.exoplanet_detection import ExoplanetDetection
 
 
 from src.manager import Manager
@@ -151,11 +152,9 @@ class App:
 
                 autoencoder = AutoEncoder()
 
-            # if option is "5":
+            if option is "5":
 
-            #     options = self.ask_user_for_training_options(option)
-            #     exoplanet = KerasExoplanetCNN()
-            #     exoplanet.start(options[0], options[1])
+                exoplanet = ExoplanetDetection()
 
             # if option is "6":
             #     # run("Projects/Test_projects/KerasRestApi.py")

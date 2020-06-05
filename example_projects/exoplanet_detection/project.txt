@@ -1,0 +1,7 @@
+name=exoplanet_detection
+download_url=
+epochs=1
+loss_function=CategoricalCrossentropy
+optimizer=adam
+batch_size=64
+model_format=h5
