@@ -5,6 +5,7 @@ from example_projects.fashion_mnist.fashion_mnist import FashionMnist
 from example_projects.stock_prediction.stock_prediction import StockPrediction
 from example_projects.auto_encoder.auto_encoder import AutoEncoder
 from example_projects.exoplanet_detection.exoplanet_detection import ExoplanetDetection
+from example_projects.rest_api_example.rest_api_model import RestAPI
 
 from src.system import System
 from src.manager import Manager
@@ -113,7 +114,7 @@ class App:
             print("3. Recurrent NN (Stock market data)")
             print("4. MNIST Autoencoder")
             print("5. Exoplanet CNN")
-            print("6. Rest API (ImageNet)")
+            print("6. Rest API to server model")
             print("0. Exit application")
             print("")
 
@@ -140,10 +141,9 @@ class App:
 
                 exoplanet = ExoplanetDetection()
 
-            # if option is "6":
-            #     # run("Projects/Test_projects/KerasRestApi.py")
-            #     print("NA")
+            if option is "6":
 
+                rest_api = RestAPI()
 
     def new_keras_project(self):
 
@@ -274,9 +274,9 @@ class App:
         # sys.stderr.write("\x1b[2J\x1b[H")
 
         print(" ")
-        print("###################################################")
-        print("####  Welcome to the Keras Deep learning tool   ###")
-        print("###################################################")
+        print("#######################################################")
+        print("####  Welcome to the AutoKeras Deep Learning tool   ###")
+        print("#######################################################")
         print(" ")
 
         while True:

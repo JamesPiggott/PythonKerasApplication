@@ -30,6 +30,15 @@ class Converter:
     def from_concrete_functions_to_tflite(self):
         print("from_concrete_functions_to_tflite")
 
+    def optimization_of_model(self):
+        mode = "Speed" 
+
+        if mode == 'Storage':
+            optimization = tf.lite.Optimize.OPTIMIZE_FOR_SIZE
+        elif mode == 'Speed':
+            optimization = tf.lite.Optimize.OPTIMIZE_FOR_LATENCY
+        else:
+            optimization = tf.lite.Optimize.DEFAULT
 
 
 
