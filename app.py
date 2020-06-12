@@ -169,20 +169,19 @@ class App:
                 self.project_management()
             elif project_option is "2":
 
-                data_location = "../Projects/" + self.project.name[:-1] + "/data/data"
-                data_location2 = "../Projects/" + self.project.name[:-1] + "/data"
+                data_location = "../Projects/" + self.project.name[:-1] + "/data"
 
                 if self.get_user_permission("Do you want to download a dataset?"):
                     if self.get_user_permission("Do you wish to use the url defined in project.txt?"):
-                        self.project.data.download_url("", self.project.download_url[:-1], data_location)
+                        self.project.data.download_url("", self.project.download_url[:-1], data_location + "/data")
                     else:
                         data_url = input("Enter the URL for the location of the data: ") 
-                        self.project.data.download_url("", data_url, data_location)
+                        self.project.data.download_url("", data_url, data_location + "/data")
 
                 if self.get_user_permission("Do you want to unzip the dataset?"):
-                    self.project.data.unzip_data_file("", data_location)
+                    self.project.data.unzip_data_file("", data_location + "/data")
 
-                self.project.data.load_data("", data_location2)
+                self.project.data.load_data("", data_location)
 
                 self.project.data.autodetect_data_format("")
                 

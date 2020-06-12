@@ -2,6 +2,7 @@ import requests
 import zipfile
 import os
 class Data:
+    data_set_name = ""
     train_dir = ""
     validation_dir = ""
     train_cats_dir = ""
@@ -22,6 +23,7 @@ class Data:
     def __init__(self):
         print("Init")
 
+        self.data_set_name = ""
         self.train_dir = ""
         self.validation_dir = ""
         self.validation_cats_dir = ""
@@ -39,8 +41,14 @@ class Data:
     def unzip_data_file(self, save_path):
         local_zip = save_path
         zip_ref = zipfile.ZipFile(local_zip, 'r')
+        self.data_set_name = zip_ref.namelist()[0]
         zip_ref.extractall(save_path + "../../")
         zip_ref.close()
+
+
+    def load_data_cnn(self, data_location):
+        print("Load datas")
+
 
     def load_data(self, data_location):
         base_dir = data_location + '/cats_and_dogs_filtered'
