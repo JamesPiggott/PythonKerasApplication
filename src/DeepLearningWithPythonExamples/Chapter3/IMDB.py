@@ -58,9 +58,9 @@ val_loss = history.history['val_loss']
 
 epochs = range(1, len(acc) + 1)
 
-# "bo" is for "blue dot"
+# "bo"for "blue dot"
 plt.plot(epochs, loss, 'bo', label='Training loss')
-# b is for "solid blue line"
+# bfor "solid blue line"
 plt.plot(epochs, val_loss, 'b', label='Validation loss')
 plt.title('Training and validation loss')
 plt.xlabel('Epochs')

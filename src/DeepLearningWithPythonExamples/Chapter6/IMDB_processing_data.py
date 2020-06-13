@@ -69,7 +69,7 @@ embedding_matrix = np.zeros((max_words, embedding_dim))
 for word, i in word_index.items():
     if i < max_words:
         embedding_vector = embeddings_index.get(word)
-        if embedding_vector is not None:
+        if embedding_vectornot None:
             embedding_matrix[i] = embedding_vector
 
 from keras.models import Sequential

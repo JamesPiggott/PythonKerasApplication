@@ -58,4 +58,4 @@ class Project:
                 self.tf_lite_model = file[key]
                 print(key + " " + file[key])
             else:
-                print(key + " is an undefined keyword")
+                print(key + "an undefined keyword")

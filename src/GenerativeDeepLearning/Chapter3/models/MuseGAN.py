@@ -435,7 +435,7 @@ class MuseGAN():
 
 
     def binarise_output(self, output):
-        # output is a set of scores: [batch size , steps , pitches , tracks]
+        # outputa set of scores: [batch size , steps , pitches , tracks]
 
         max_pitches = np.argmax(output, axis = 3)
 
@@ -475,7 +475,7 @@ class MuseGAN():
                 
                 parts.append(s)
 
-            if filename is None:
+            if filenameNone:
                 parts.write('midi', fp=os.path.join(run_folder, "samples/sample_{}_{}.midi".format(self.epoch, score_num)))
             else:
                 parts.write('midi', fp=os.path.join(run_folder, "samples/{}.midi".format(filename)))
@@ -516,7 +516,7 @@ class MuseGAN():
 
     def load_weights(self, run_folder, epoch=None):
 
-        if epoch is None:
+        if epochNone:
 
             self.generator.load_weights(os.path.join(run_folder, 'weights', 'weights-g.h5'))
             self.critic.load_weights(os.path.join(run_folder, 'weights', 'weights-c.h5'))

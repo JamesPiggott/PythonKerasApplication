@@ -2,9 +2,9 @@
 
 As the name would suggest AutoKeras allows developers to automatically create Deep Learning models using the [Keras](https://keras.io/) API. In essence this application provides project management. All relevant details are stored on a project file which can be re-used. Should the need arise the project file can be read without human intervention.
 
-To jumpstart your Deep Learning project several showcase examples have bene implemented using the Keras API. These examples proof the generilizations that are possible. AutoKeras is written with Python 3 and adheres to the OOP-paradigm. Tensorflow 2 is used which now provides the Keras API by default.
+To jumpstart your Deep Learning project several showcase examples have bene implemented using the Keras API. These examples proof the generilizations that are possible. AutoKeraswritten with Python 3 and adheres to the OOP-paradigm. Tensorflow 2used which now provides the Keras API by default.
 
-Currently this project is in early-alpha development and is nowhere near feature complete. In time a GUI using Kivy, use of Docker containers and dataset versioning will be implemented. It is possible to transform models built using Keras to TensorFlow Lite for mobile use. Models can also be deployed for testing on REST server.
+Currently this projectin early-alpha development andnowhere near feature complete. In time a GUI using Kivy, use of Docker containers and dataset versioning will be implemented. Itpossible to transform models built using Keras to TensorFlow Lite for mobile use. Models can also be deployed for testing on REST server.
 
 ## To start AutoKeras
 

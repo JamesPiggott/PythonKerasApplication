@@ -7,7 +7,7 @@ import numpy as np
 x_train = np.random.random((1000, 64))
 y_train = np.random.random((1000, 10))
 
-# Below is an example of the functional API provided by Keras
+# Belowan example of the functional API provided by Keras
 input_tensor = Input(shape=(64,))
 x = layers.Dense(32, activation='relu')(input_tensor)
 x = layers.Dense(32, activation='relu')(x)

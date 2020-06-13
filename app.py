@@ -36,7 +36,7 @@ class App:
         print("")
         print("Select training options: # epochs and model save choice")
 
-        if option is "1":
+        if option == "1":
             while True:
                 print("For 'Boston Housing Data' 300 epochs are typical")
                 epochs = int(input("Enter number of epochs: "))
@@ -51,7 +51,7 @@ class App:
                 else:
                     print("Please enter a sensible value between 0 and 1000")
 
-        if option is "2":
+        if option == "2":
             while True:
                 print("For 'MNIST-Fashion Zalando' 20 epochs are typical")
                 epochs = int(input("Enter number of epochs: "))
@@ -66,13 +66,13 @@ class App:
                 else:
                     print("Please enter a sensible value between 0 and 100")
 
-        if option is "3":
+        if option == "3":
             print()
 
-        if option is "4":
+        if option == "4":
             print()
 
-        if option is "5":
+        if option == "5":
             while True:
                 print("For 'Exoplanet CNN' 32 epochs are typical")
                 epochs = int(input("Enter number of epochs: "))
@@ -87,7 +87,7 @@ class App:
                 else:
                     print("Please enter a sensible value between 0 and 100")
 
-        if option is "6":
+        if option == "6":
             while True:
                 print("For 'MNIST-AutoEncoder' 50 epochs are typical")
                 epochs = int(input("Enter number of epochs: "))
@@ -119,29 +119,29 @@ class App:
             print("")
 
             option = input("Choose an option: ")
-            if option is "0":
+            if option == "0":
                 break
-            if option is "1":
+            if option == "1":
 
                 boston = BostonHousing()
 
-            if option is "2":
+            if option == "2":
 
                 fashion = FashionMnist()
 
-            if option is "3":
+            if option == "3":
 
                 stock = StockPrediction()
 
-            if option is "4":
+            if option == "4":
 
                 autoencoder = AutoEncoder()
 
-            if option is "5":
+            if option == "5":
 
                 exoplanet = ExoplanetDetection()
 
-            if option is "6":
+            if option == "6":
 
                 rest_api = RestAPI()
 
@@ -163,11 +163,11 @@ class App:
             project_option = input("Choose an option: ")
             print("")
 
-            if project_option is "0":
+            if project_option == "0":
                 break
-            elif project_option is "1":
+            elif project_option == "1":
                 self.project_management()
-            elif project_option is "2":
+            elif project_option == "2":
 
                 data_location = "../Projects/" + self.project.name[:-1] + "/data"
 
@@ -186,7 +186,7 @@ class App:
                 self.project.data.autodetect_data_format("")
                 
                 self.project.data.transform_data("")
-            elif project_option is "3":
+            elif project_option == "3":
 
                 self.model = Model()
 
@@ -195,20 +195,20 @@ class App:
                 self.model.set_optimizer()
 
                 # set_data_augmentation()
-            elif project_option is "4":
+            elif project_option == "4":
 
                 self.train = Train(self.model, self.project.data, self.project)
 
                 self.train.train_model(self.project)
 
                 self.train.store_model("../Projects/" + self.project.name[:-1]) 
-            elif project_option is "5":
+            elif project_option == "5":
 
                 self.evaluate = Evaluate(self.model)
 
                 self.evaluate.evaluate_model()
 
-            elif project_option is "6":
+            elif project_option == "6":
                 print("TODO: cycle through the workflow automatically using project meta data")
             else:
                 print("Not a valid option")
@@ -230,9 +230,9 @@ class App:
             project_option = input("Choose an option: ")
             print("")
 
-            if project_option is "0": 
+            if project_option == "0": 
                 break
-            elif project_option is "1":
+            elif project_option == "1":
 
                 print()
                 print("The following project folder were detected")
@@ -242,19 +242,19 @@ class App:
                     print(" # " + project)
                 print()
 
-            elif project_option is "2":
+            elif project_option == "2":
 
                 directory_name = input("Enter the name of the project you want to open: ")
                 message, self.project = self.manager.open_project(directory_name)
                 print("Project name: " + self.project.name)
 
-            elif project_option is "3":
+            elif project_option == "3":
 
                 directory_name = input("Enter a name for your new project: ")
                 message = self.manager.create_folder(directory_name)
                 print(message)
 
-            elif project_option is "4":
+            elif project_option == "4":
 
                 directory_name = input("Enter name of project you want to delete: ")
                 message = self.manager.delete_folder(directory_name)
@@ -291,13 +291,13 @@ class App:
             option = input("Choose an option: ")
             print("")
 
-            if option is "0":
+            if option == "0":
                 break
-            if option is "1":
+            if option == "1":
                 self.example_keras_apps()
-            if option is "2":
+            if option == "2":
                 self.new_keras_project()
-            if option is "3":
+            if option == "3":
                 self.system = System()
                 self.system.get_available_gpus()
                 self.system.check_docker_availability()

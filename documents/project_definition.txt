@@ -4,7 +4,7 @@ A Project folder should looks as follows
 /project.txt - formal definition of the project containing all necessary specifications
 /Dockerfile - if project uses Docker
 /data/ - folder containing the training and testing data
-/model/ - folder where the trained model is stored
+/model/ - folder where the trained modelstored
 /deployment/ - folder with executable example of the project 
 
 The following items should be defined in a Keras project
