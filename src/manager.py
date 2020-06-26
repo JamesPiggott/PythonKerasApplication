@@ -19,7 +19,7 @@ class Manager:
         try:
             if not os.path.exists('../Projects/' + directory):
                 os.makedirs('../Projects/' + directory + '/data')
-                create_project_file(directory)
+                self.create_project_file(directory)
                 return "New directory " + directory + " created"
             else:
                 return "Directory already exists"
@@ -30,12 +30,14 @@ class Manager:
     def create_project_file(self, directory):
         f = open('../Projects/' + directory + "/project.txt", "w+")
         f.write("name="+directory+"\n")
+        f.write("dnn_type=cnn"+"\n")
         f.write("download_url="+"https://storage.googleapis.com/mledu-datasets/cats_and_dogs_filtered.zip"+"\n")
         f.write("epochs=10"+"\n")
         f.write("loss_function=CategoricalCrossentropy"+"\n")
         f.write("optimizer=adam"+"\n")
         f.write("batch_size=64"+"\n")
         f.write("model_format=h5"+"\n")
+        f.write("tf_lite_model=yes"+"\n")
         f.close()
 
     # Open specified project and return content of project.txt
