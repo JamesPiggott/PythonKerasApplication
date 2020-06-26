@@ -25,3 +25,6 @@ The following showcase application are available.
 3. Recurrent Neural Network using stock market data.
 4. MNIST Autoencoder.
 5. Advanced Convolutional Neural Network for Exoplanet detection.
+
+
+
