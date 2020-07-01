@@ -26,6 +26,7 @@ class Project:
         self.batch_size = ""
         self.model_format = ""
         self.tf_lite_model = ""
+        self.data = Data()
 
     def parse_input(self, file):
         print("")

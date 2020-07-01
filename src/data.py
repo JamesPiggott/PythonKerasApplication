@@ -41,7 +41,8 @@ class Data:
     def unzip_data_file(self, save_path):
         local_zip = save_path
         zip_ref = zipfile.ZipFile(local_zip, 'r')
-        self.data_set_name = zip_ref.namelist()[0]
+        data_name = zip_ref.namelist()[0]
+        self.data_set_name = data_name
         zip_ref.extractall(save_path + "../../")
         zip_ref.close()
 

@@ -179,13 +179,13 @@ class App:
                         self.project.data.download_url("", data_url, data_location + "/data")
 
                 if self.get_user_permission("Do you want to unzip the dataset?"):
-                    self.project.data.unzip_data_file("", data_location + "/data")
+                    self.project.data.unzip_data_file(data_location + "/data")
 
-                self.project.data.load_data("", data_location)
+                self.project.data.load_data(data_location)
 
-                self.project.data.autodetect_data_format("")
+                self.project.data.autodetect_data_format()
                 
-                self.project.data.transform_data("")
+                self.project.data.transform_data()
             elif project_option == "3":
 
                 self.model = Model()
