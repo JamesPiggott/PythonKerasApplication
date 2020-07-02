@@ -6,6 +6,7 @@ class Project:
     name = ""
     dnn_type = ""
     download_url = ""
+    data_set_name = ""
     epochs = ""
     loss_function = ""
     optimizer = ""
@@ -20,6 +21,7 @@ class Project:
         self.name = ""
         self.dnn_type = ""
         self.download_url = ""
+        self.data_set_name = ""
         self.epochs = ""
         self.loss_function = ""
         self.optimizer = ""
@@ -39,6 +41,9 @@ class Project:
                 print(key + " " + file[key])
             elif key == "download_url":
                 self.download_url = file[key]
+                print(key + " " + file[key])
+            elif key == "data_set_name":
+                self.data_set_name = file[key]
                 print(key + " " + file[key])
             elif key == "epochs":
                 self.epochs = file[key]

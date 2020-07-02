@@ -32,6 +32,7 @@ class Manager:
         f.write("name="+directory+"\n")
         f.write("dnn_type=cnn"+"\n")
         f.write("download_url="+"https://storage.googleapis.com/mledu-datasets/cats_and_dogs_filtered.zip"+"\n")
+        f.write("data_set_name="+"\n")
         f.write("epochs=10"+"\n")
         f.write("loss_function=CategoricalCrossentropy"+"\n")
         f.write("optimizer=adam"+"\n")
@@ -60,6 +61,21 @@ class Manager:
         except OSError:
             print('Error: Opening directory. ' + directory)      
 
+    # Changes made to project are saved back to project.txt
+    def save_project(self, project):
+        f = open('../Projects/' + project.name[:-1] + "/project.txt", "w+")
+        f.write("name="+project.name +"\n")
+        f.write("dnn_type="+project.dnn_type+"\n")
+        f.write("download_url="+project.download_url+"\n")
+        f.write("data_set_name="+project.data_set_name+ "\n")
+        f.write("epochs="+project.epochs+"\n")
+        f.write("loss_function="+project.loss_function+"\n")
+        f.write("optimizer="+project.optimizer+"\n")
+        f.write("batch_size="+project.batch_size+"\n")
+        f.write("model_format="+project.model_format+"\n")
+        f.write("tf_lite_model="+project.tf_lite_model+"\n")
+        f.close()
+        
 
     # Deleting a new folder for a project
     def delete_folder(self, directory):

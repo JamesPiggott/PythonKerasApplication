@@ -224,6 +224,7 @@ class App:
             print("2. Open project file")
             print("3. Create new project")
             print("4. Delete project")
+            print("5. Save project")
             print("0. Return to project overview menu")
             print("")
 
@@ -259,6 +260,11 @@ class App:
                 directory_name = input("Enter name of project you want to delete: ")
                 message = self.manager.delete_folder(directory_name)
                 print(message)
+
+            elif project_option == "5":
+
+                self.manager.save_project(self.project)
+                # print("Project: " + project.name + " saved to disk")
 
             else:
                 print("Not a valid option")
