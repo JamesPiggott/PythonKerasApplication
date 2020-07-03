@@ -41,7 +41,7 @@ class Data:
     def unzip_data_file(self, save_path):
         local_zip = save_path
         zip_ref = zipfile.ZipFile(local_zip, 'r')
-        data_name = zip_ref.namelist()[0]
+        data_name = zip_ref.namelist()[0][:-1]
         self.data_set_name = data_name
         zip_ref.extractall(save_path + "../../")
         zip_ref.close()
@@ -52,7 +52,8 @@ class Data:
 
 
     def load_data(self, data_location):
-        base_dir = data_location + '/cats_and_dogs_filtered'
+
+        base_dir = data_location + '/' + self.data_set_name
 
         train_dir = os.path.join(base_dir, 'train')
         validation_dir = os.path.join(base_dir, 'validation')
