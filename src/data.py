@@ -53,36 +53,29 @@ class Data:
 
     def load_data(self, data_location):
 
-        base_dir = data_location + '/' + self.data_set_name
-
+        base_dir = os.path.join(data_location, self.data_set_name)
         train_dir = os.path.join(base_dir, 'train')
         validation_dir = os.path.join(base_dir, 'validation')
 
-        # Directory with our training cat/dog pictures
-        train_cats_dir = os.path.join(train_dir, 'cats')
-        train_dogs_dir = os.path.join(train_dir, 'dogs')
-        print(train_cats_dir)
+        data_categories = os.listdir(train_dir)
 
-        # Directory with our validation cat/dog pictures
-        validation_cats_dir = os.path.join(validation_dir, 'cats')
-        validation_dogs_dir = os.path.join(validation_dir, 'dogs')
+        train_set = []
+        for cat in data_categories:
+            train_set.append(os.path.join(train_dir, cat))
 
-        print(validation_cats_dir)
+        val_set = []
+        for cat in data_categories:
+            val_set.append(os.path.join(validation_dir, cat))
 
-        # List categories
-        train_cat_fnames = os.listdir( train_cats_dir )
-        train_dog_fnames = os.listdir( train_dogs_dir )
+        for training in train_set:
+            print('total training '+ cat +' images :', len(os.listdir(training)))
 
-        print(train_cat_fnames[:10])
-        print(train_dog_fnames[:10])
+        for validation in val_set:
+            print('total validation '+ cat +' images :', len(os.listdir(validation)))
 
-        print('total training cat images :', len(os.listdir(      train_cats_dir ) ))
-        print('total training dog images :', len(os.listdir(      train_dogs_dir ) ))
-
-        print('total validation cat images :', len(os.listdir( validation_cats_dir ) ))
-        print('total validation dog images :', len(os.listdir( validation_dogs_dir ) ))
-
-        print("Loading data for project: ")
+        # sample_files = []
+        # for train in train_set:
+        #     sample_files.append(os.listdir(train))
 
 
     def autodetect_data_format(self):
