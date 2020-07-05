@@ -155,7 +155,7 @@ class App:
             print("3. Define model")
             print("4. Train model using data set")
             print("5. Evaluate trained model")
-            print("6. Perform steps 2 through 6 in sequence")
+            print("6. Model conversion")
             print("7. Deployment")
             print("0. Return to main menu")
             print("")
@@ -173,10 +173,10 @@ class App:
 
                 if self.get_user_permission("Do you want to download a dataset?"):
                     if self.get_user_permission("Do you wish to use the url defined in project.txt?"):
-                        self.project.data.download_url("", self.project.download_url[:-1], data_location + "/data")
+                        self.project.data.download_url(self.project.download_url[:-1], data_location + "/data")
                     else:
                         data_url = input("Enter the URL for the location of the data: ") 
-                        self.project.data.download_url("", data_url, data_location + "/data")
+                        self.project.data.download_url(data_url, data_location + "/data")
 
                 if self.get_user_permission("Do you want to unzip the dataset?"):
                     self.project.data.unzip_data_file(data_location + "/data")
@@ -209,7 +209,14 @@ class App:
                 self.evaluate.evaluate_model()
 
             elif project_option == "6":
-                print("TODO: cycle through the workflow automatically using project meta data")
+
+                print("Convert model to TensorFlow Lite or OpenVINO")
+
+            elif project_option == "7":
+
+                print("Deploy model for testing")
+
+
             else:
                 print("Not a valid option")
 

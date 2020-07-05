@@ -33,6 +33,7 @@ class Data:
 
 
     def download_url(self, url, save_path, chunk_size=128):
+        print("URL: " + url)
         r = requests.get(url, stream=True)
         with open(save_path, 'wb') as fd:
             for chunk in r.iter_content(chunk_size=chunk_size):
