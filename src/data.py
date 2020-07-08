@@ -55,18 +55,18 @@ class Data:
     def load_data(self, data_location):
 
         base_dir = os.path.join(data_location, self.data_set_name)
-        train_dir = os.path.join(base_dir, 'train')
-        validation_dir = os.path.join(base_dir, 'validation')
+        self.train_dir = os.path.join(base_dir, 'train')
+        self.validation_dir = os.path.join(base_dir, 'validation')
 
-        data_categories = os.listdir(train_dir)
+        data_categories = os.listdir(self.train_dir)
 
         train_set = []
         for cat in data_categories:
-            train_set.append(os.path.join(train_dir, cat))
+            train_set.append(os.path.join(self.train_dir, cat))
 
         val_set = []
         for cat in data_categories:
-            val_set.append(os.path.join(validation_dir, cat))
+            val_set.append(os.path.join(self.validation_dir, cat))
 
         for training in train_set:
             print('total training '+ cat +' images :', len(os.listdir(training)))
