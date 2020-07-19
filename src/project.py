@@ -8,6 +8,8 @@ class Project:
     download_url = ""
     data_set_name = ""
     epochs = ""
+    steps_per_epoch = ""
+    validation_steps = ""
     loss_function = ""
     optimizer = ""
     batch_size = ""
@@ -23,6 +25,8 @@ class Project:
         self.download_url = ""
         self.data_set_name = ""
         self.epochs = ""
+        self.steps_per_epoch = ""
+        self.validation_steps = ""
         self.loss_function = ""
         self.optimizer = ""
         self.batch_size = ""
@@ -47,6 +51,12 @@ class Project:
                 print(key + " " + file[key])
             elif key == "epochs":
                 self.epochs = file[key]
+                print(key + " " + file[key])
+            elif key == "steps_per_epoch":
+                self.steps_per_epoch = file[key]
+                print(key + " " + file[key])
+            elif key == "validation_steps":
+                self.validation_steps = file[key]
                 print(key + " " + file[key])
             elif key == "loss_function":
                 self.loss_function = file[key]

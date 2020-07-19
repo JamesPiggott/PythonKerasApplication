@@ -41,13 +41,23 @@ class Train:
                                                                 class_mode  = 'binary',
                                                                 target_size = (150, 150))
 
-        self.model.history = self.model.model.fit(train_generator,
-                                    validation_data=validation_generator,
-                                    steps_per_epoch=5,
-                                    epochs=5,
-                                    validation_steps=5,
-                                    verbose=2)
+        steps_per_epoch = int(project.steps_per_epoch)
+        validation_steps = int(project.validation_steps)
+        epochs = int(project.epochs)
 
+        if steps_per_epoch > 0:
+            self.model.history = self.model.model.fit(train_generator,
+                                    validation_data=validation_generator,
+                                    steps_per_epoch=steps_per_epoch,
+                                    epochs=epochs,
+                                    validation_steps=validation_steps,
+                                    verbose=2)          
+        else :
+            self.model.history = self.model.model.fit(train_generator,
+                                    validation_data=validation_generator,
+                                    epochs=epochs,
+                                    verbose=2)
+    
 
     def store_model(self, path):
         print("Store the model")
