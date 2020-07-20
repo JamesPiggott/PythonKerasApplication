@@ -63,3 +63,6 @@ class Train:
         print("Store the model")
         saved_model_path = "/my_model.h5"
         self.model.model.save(path + saved_model_path)
+
+
+        self.model.model.save(path + "/test_model")

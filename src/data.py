@@ -52,7 +52,17 @@ class Data:
         print("Load datas")
 
 
+
     def load_data(self, data_location):
+        """Load the location of the data training and validation sets. 
+        
+        Format is /dataset name/train/classes
+                                /validation/classes
+
+        Parameters:
+        data_location (string): Absolute path to dataset
+
+        """
 
         base_dir = os.path.join(data_location, self.data_set_name)
         self.train_dir = os.path.join(base_dir, 'train')
@@ -73,10 +83,6 @@ class Data:
 
         for validation in val_set:
             print('total validation '+ cat +' images :', len(os.listdir(validation)))
-
-        # sample_files = []
-        # for train in train_set:
-        #     sample_files.append(os.listdir(train))
 
 
     def autodetect_data_format(self):

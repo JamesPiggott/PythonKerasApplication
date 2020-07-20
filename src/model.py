@@ -38,3 +38,12 @@ class Model:
 
     def set_data_augmentation(self):
         print("Setting data augmentation")
+
+    def load_model(model_name):
+        """Load a pre-trained for transfer learning. Unless name is specified 'my_model.h5' is used
+        
+
+        Parameters:
+        model_name (string): Name of pre-trained model that needs to be loaded
+
+        """
