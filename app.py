@@ -258,8 +258,13 @@ class App:
 
             elif project_option == "3":
 
-                directory_name = input("Enter a name for your new project: ")
-                message = self.manager.create_folder(directory_name)
+                if self.get_user_permission("Do you want to create a new project folder?"):
+                    directory_name = input("Enter a name for your new project: ")
+                    message = self.manager.create_folder(directory_name)
+                else:
+                    directory_name = input("Enter the name of project where project.txt needs to be created: ")
+                    message = self.manager.create_project_file(directory_name)
+
                 print(message)
 
             elif project_option == "4":

@@ -42,6 +42,7 @@ class Manager:
         f.write("model_format=h5"+"\n")
         f.write("tf_lite_model=yes"+"\n")
         f.close()
+        return "New project file for " + directory + " created"
 
     # Open specified project and return content of project.txt
     def open_project(self, directory):
