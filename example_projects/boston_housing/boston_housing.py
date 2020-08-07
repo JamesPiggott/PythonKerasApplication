@@ -86,5 +86,8 @@ class BostonHousing:
 
     def store_model(self, path):
         print("Store the model")
-        saved_model_path = "/my_model.h5"
-        self.model.save(path + saved_model_path)
+
+        # Create 
+        self.model.save("my_model")
+        # saved_model_path = "/my_model.h5"
+        # self.model.save(path + saved_model_path)
