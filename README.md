@@ -28,3 +28,6 @@ The following showcase application are available.
 
 
 
+Resources
+https://github.com/tensorflow/docs/blob/master/site/en/tutorials/keras/save_and_load.ipynb
+https://leimao.github.io/blog/Save-Load-Inference-From-TF2-Frozen-Graph/
