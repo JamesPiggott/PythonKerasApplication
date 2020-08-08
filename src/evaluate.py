@@ -6,8 +6,6 @@ import matplotlib.pyplot as plt
 
 class Evaluate:
 
-    model = Model
-
     def __init__(self, model):
         print("")
         self.model = model

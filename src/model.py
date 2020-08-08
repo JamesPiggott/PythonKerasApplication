@@ -3,9 +3,6 @@ from tensorflow.keras.optimizers import RMSprop
 
 class Model:
 
-    model = ""
-    history = ""
-
     def __init__(self):
         print("")
         self.model = ""

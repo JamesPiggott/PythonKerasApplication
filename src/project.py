@@ -3,21 +3,6 @@ from .data import Data
 
 class Project:
 
-    name = ""
-    dnn_type = ""
-    download_url = ""
-    data_set_name = ""
-    epochs = ""
-    steps_per_epoch = ""
-    validation_steps = ""
-    loss_function = ""
-    optimizer = ""
-    batch_size = ""
-    model_format = ""
-    tf_lite_model = ""
-
-    data = Data
-
     """Represent the high-level definition of a Project"""
     def __init__(self):
         self.name = ""

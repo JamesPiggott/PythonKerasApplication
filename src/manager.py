@@ -6,7 +6,6 @@ import shutil
 
 class Manager:
 
-
     def __init__(self):
         print("Manager")
 

@@ -7,11 +7,6 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 class Train:
 
-    model = Model
-    data = Data
-    project = Project
-    history = ""
-
     def __init__(self, model, data, project):
         self.model = model
         self.data = data
@@ -57,12 +52,4 @@ class Train:
                                     validation_data=validation_generator,
                                     epochs=epochs,
                                     verbose=2)
-    
 
-    def store_model(self, path):
-        print("Store the model")
-        saved_model_path = "/my_model.h5"
-        self.model.model.save(path + saved_model_path)
-
-
-        self.model.model.save(path + "/test_model")

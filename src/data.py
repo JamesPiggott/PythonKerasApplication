@@ -2,15 +2,6 @@ import requests
 import zipfile
 import os
 class Data:
-    data_set_name = ""
-    train_dir = ""
-    validation_dir = ""
-    train_cats_dir = ""
-    train_dogs_dir = ""
-    validation_cats_dir = ""
-    validation_dogs_dir = ""
-    train_cat_fnames = ""
-    train_dog_fnames = ""
 
     '''
     Created on July 15 2018

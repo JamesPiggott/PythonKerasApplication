@@ -3,12 +3,19 @@ import tensorflow as tf
 
 class Converter:
 
-    model_format = ""
-
-    """Contains functions to convert models to other formats: h5, JSON and TF lite"""
+    """Contains functions to create SavedModel and convert model to other formats.
+       Options include:
+       - SavedModel (TensorFlow Core)
+       - JSON (TensorFlow.js)
+       - tflite (TensorFlow Lite)
+    
+    
+    """
     def __init__(self):
         self.model_format = ""
 
+    def create_saved_model(self, model, export_path):
+        model.model.save(export_path)
 
     def from_keras_to_json(self):
         # saved_model_path = "./{}.h5".format(int(time.time()))

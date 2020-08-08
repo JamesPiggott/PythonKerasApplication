@@ -13,16 +13,9 @@ from src.project import Project
 from src.model import Model
 from src.train import Train
 from src.evaluate import Evaluate
-
+from src.converter import Converter
 
 class App:
-
-    system = System
-    manager = Manager
-    project = Project
-    model = Model
-    train = Train
-    evaluate = Evaluate
 
     def get_user_permission(self, request_message):
         reply = input(request_message + " ")
@@ -201,7 +194,6 @@ class App:
 
                 self.train.train_model(self.project)
 
-                self.train.store_model("../Projects/" + self.project.name[:-1]) 
             elif project_option == "5":
 
                 self.evaluate = Evaluate(self.model)
@@ -210,12 +202,13 @@ class App:
 
             elif project_option == "6":
 
-                print("Convert model to TensorFlow Lite or OpenVINO")
+                self.convert = Converter()
+
+                self.convert.create_saved_model(self.model, "../Projects/" + self.project.name[:-1] + "/my_models")
 
             elif project_option == "7":
 
                 print("Deploy model for testing")
-
 
             else:
                 print("Not a valid option")
@@ -276,7 +269,6 @@ class App:
             elif project_option == "5":
 
                 self.manager.save_project(self.project)
-                # print("Project: " + project.name + " saved to disk")
 
             else:
                 print("Not a valid option")
