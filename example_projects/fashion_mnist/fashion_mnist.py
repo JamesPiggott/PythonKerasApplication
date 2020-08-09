@@ -4,32 +4,16 @@ import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 import numpy as np
 
-from keras.datasets import fashion_mnist
-from keras.utils import to_categorical
+from tensorflow.keras.datasets import fashion_mnist
+from tensorflow.keras.preprocessing.image import load_img
+from tensorflow.keras.preprocessing.image import img_to_array
+from tensorflow.keras.utils import to_categorical
 from sklearn.model_selection import train_test_split
 
 
 from tensorflow.keras.optimizers import Adam
 
 class FashionMnist:
-
-    # Data variables
-    train_X = ""
-    train_Y = ""
-    test_X  = ""
-    test_Y  = ""
-    train_Y_one_hot = "" 
-    test_Y_one_hot = ""
-    valid_X = ""
-    train_label = ""
-    valid_label = ""
-    classes = ""
-
-    # Model variables
-    model = ""
-    history = ""
-    epochs = ""
-    batch_size = ""
 
     def __init__(self):
         self.train_X = ""
@@ -54,6 +38,8 @@ class FashionMnist:
         self.train_model()
         self.evaluate_model()
         self.store_model("example_projects/fashion_mnist/")
+        self.load_model("example_projects/fashion_mnist/")
+        self.perform_inference()
 
 
     def load_data(self):
@@ -75,7 +61,7 @@ class FashionMnist:
 
         # Convert the class labels to a boolean column
         train_Y_one_hot = to_categorical(self.train_Y)
-        test_Y_one_hot = to_categorical(self.test_Y)
+        # test_Y_one_hot = to_categorical(self.test_Y)
 
         print("Result after conversion: ", train_Y_one_hot[0])
 
@@ -88,7 +74,7 @@ class FashionMnist:
 
         self.batch_size = batch_size
         self.epochs = epochs
-        num_classes = self.classes
+        # num_classes = self.classes
 
         # The complete model
         self.model = tf.keras.models.Sequential([
@@ -120,7 +106,7 @@ class FashionMnist:
 
 
     def train_model(self):
-        self.history = self.model.fit(self.train_X, self.train_label, batch_size=self.batch_size, epochs=self.epochs, verbose=2,validation_data=(self.valid_X, self.valid_label))
+        self.history = self.model.fit(self.train_X, self.train_label, batch_size=self.batch_size, epochs=10, verbose=2,validation_data=(self.valid_X, self.valid_label))
 
     def evaluate_model(self):
         print("Evaluating the model")
@@ -157,5 +143,24 @@ class FashionMnist:
 
     def store_model(self, path):
         print("Store the model")
-        saved_model_path = "/my_model/model.h5"
+        saved_model_path = 'my_model.h5'
         self.model.save(path + saved_model_path)
+        del self.model
+
+    def load_model(self, path):
+        print("Load the model")
+        saved_model_path = 'my_model.h5'
+        self.model = tf.keras.models.load_model(path + saved_model_path)
+
+    def load_image(self, filename):
+        img = load_img(filename, grayscale=True, target_size=(28, 28))
+        img = img_to_array(img)
+        img = img.reshape(1, 28, 28, 1)
+        img = img.astype('float32')
+        img = img / 255.0
+        return img
+
+    def perform_inference(self):
+        img = self.load_image('example_projects/fashion_mnist/sample_image.png')
+        result = self.model.predict_classes(img)
+        print(result[0])
