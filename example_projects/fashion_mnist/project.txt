@@ -1,7 +1,11 @@
 name=fashion_mnist
+dnn_type=cnn
 download_url=
-epochs=1
+epochs=10
+steps_per_epoch=10
+validation_steps=10
 loss_function=CategoricalCrossentropy
 optimizer=adam
 batch_size=64
 model_format=h5
+tf_lite_model=true

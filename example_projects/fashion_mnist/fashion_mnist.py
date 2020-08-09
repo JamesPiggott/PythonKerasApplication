@@ -157,5 +157,5 @@ class FashionMnist:
 
     def store_model(self, path):
         print("Store the model")
-        saved_model_path = "/my_model.h5"
+        saved_model_path = "/my_model/model.h5"
         self.model.save(path + saved_model_path)

@@ -4,3 +4,4 @@
 *.csv
 /src/*pyc
 /my_model
+/example_projects/fashion_mnist/my_model
