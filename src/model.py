@@ -1,5 +1,6 @@
 import tensorflow as tf
 from tensorflow.keras.optimizers import RMSprop
+import importlib
 
 class Model:
 
@@ -32,11 +33,16 @@ class Model:
               loss='binary_crossentropy',
               metrics = ['accuracy'])
 
+        # self.model.compile(
+        #     optimizer='sgd',
+        #     loss='mse',
+        #     metrics=[tf.keras.metrics.BinaryCrossentropy()])
+
 
     def set_data_augmentation(self):
         print("Setting data augmentation")
 
-    def load_model(model_name):
+    def load_model(self, model_name):
         """Load a pre-trained for transfer learning. Unless name is specified 'my_model.h5' is used
         
 
@@ -44,3 +50,9 @@ class Model:
         model_name (string): Name of pre-trained model that needs to be loaded
 
         """
+
+    def load_model_from_project(self, project_name):
+        print(project_name)
+        module_name = project_name
+        module = importlib.import_module(module_name,package="Model")
+        print(module.__doc__)

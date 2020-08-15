@@ -28,16 +28,23 @@ class Converter:
         print("from_keras_to_json")
 
 
-    def from_saved_model_to_tflite(self):
-        print("from_saved_model_to_tflite")
+    def from_saved_model_to_tflite(self, model, export_path, file_name):
+        converter = tf.lite.TFLiteConverter.from_saved_model(model.model)
+        buffer = converter.convert()
+        open(file_name + '.tflite' , 'wb' ).write( buffer )
 
 
-    def from_keras_to_tflite(self):
-        print("from_keras_to_tflite")
+    def from_keras_to_tflite(self, model, export_path, file_name):
+        converter = tf.lite.TFLiteConverter.from_keras_model(model.model)
+        converter.optimizations = [tf.lite.Optimize.DEFAULT]
+        buffer = converter.convert()
+        open(export_path + "/" + file_name + '.tflite' , 'wb' ).write( buffer )
 
 
-    def from_concrete_functions_to_tflite(self):
-        print("from_concrete_functions_to_tflite")
+    def from_concrete_functions_to_tflite(self, model, export_path, file_name):
+        converter = tf.lite.TFLiteConverter.from_concrete_functions_to_tflite(model.model)
+        buffer = converter.convert()
+        open(file_name + '.tflite' , 'wb' ).write( buffer )
 
     def optimization_of_model(self):
         mode = "Speed" 

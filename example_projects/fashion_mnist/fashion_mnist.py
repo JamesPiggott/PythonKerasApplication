@@ -71,10 +71,9 @@ class FashionMnist:
 
 
     def define_model(self, epochs, batch_size):
-
         self.batch_size = batch_size
         self.epochs = epochs
-        # num_classes = self.classes
+
 
         # The complete model
         self.model = tf.keras.models.Sequential([
@@ -149,7 +148,7 @@ class FashionMnist:
 
     def load_model(self, path):
         print("Load the model")
-        saved_model_path = 'my_model.h5'
+        saved_model_path = 'test_model.h5'
         self.model = tf.keras.models.load_model(path + saved_model_path)
 
     def load_image(self, filename):
@@ -161,6 +160,6 @@ class FashionMnist:
         return img
 
     def perform_inference(self):
-        img = self.load_image('example_projects/fashion_mnist/sample_image.png')
+        img = self.load_image('example_projects/fashion_mnist/test.png')
         result = self.model.predict_classes(img)
         print(result[0])

@@ -187,6 +187,8 @@ class App:
                 
                 self.model.set_optimizer()
 
+                # self.model.load_model_from_project("./Projects/" + self.project.name[:-1] ) # + "/model"
+
                 # set_data_augmentation()
             elif project_option == "4":
 
@@ -204,7 +206,14 @@ class App:
 
                 self.convert = Converter()
 
-                self.convert.create_saved_model(self.model, "../Projects/" + self.project.name[:-1] + "/my_models")
+                # self.convert.create_saved_model(self.model, "../Projects/" + self.project.name[:-1] + "/my_models")
+                print("1")
+                # if self.project.tf_lite_model == True:
+                # self.convert.from_saved_model_to_tflite(self.model, "../Projects/" + self.project.name[:-1] + "/my_models", self.project.name[:-1])
+                print("2")
+                self.convert.from_keras_to_tflite(self.model, "../Projects/" + self.project.name[:-1] + "/my_models", self.project.name[:-1])
+
+                # self.convert.from_concrete_functions(self.model, "../Projects/" + self.project.name[:-1] + "/my_models", self.project.name[:-1])
 
             elif project_option == "7":
 
