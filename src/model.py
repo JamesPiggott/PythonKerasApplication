@@ -33,11 +33,6 @@ class Model:
               loss='binary_crossentropy',
               metrics = ['accuracy'])
 
-        # self.model.compile(
-        #     optimizer='sgd',
-        #     loss='mse',
-        #     metrics=[tf.keras.metrics.BinaryCrossentropy()])
-
 
     def set_data_augmentation(self):
         print("Setting data augmentation")

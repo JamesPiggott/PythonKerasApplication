@@ -14,6 +14,7 @@ from src.model import Model
 from src.train import Train
 from src.evaluate import Evaluate
 from src.converter import Converter
+from src.inference import Inference
 
 class App:
 
@@ -149,7 +150,8 @@ class App:
             print("4. Train model using data set")
             print("5. Evaluate trained model")
             print("6. Model conversion")
-            print("7. Deployment")
+            print("7. Model inference")
+            print("8. Deployment")
             print("0. Return to main menu")
             print("")
 
@@ -206,16 +208,18 @@ class App:
 
                 self.convert = Converter()
 
-                # self.convert.create_saved_model(self.model, "../Projects/" + self.project.name[:-1] + "/my_models")
-                print("1")
-                # if self.project.tf_lite_model == True:
-                # self.convert.from_saved_model_to_tflite(self.model, "../Projects/" + self.project.name[:-1] + "/my_models", self.project.name[:-1])
-                print("2")
-                self.convert.from_keras_to_tflite(self.model, "../Projects/" + self.project.name[:-1] + "/my_models", self.project.name[:-1])
+                self.convert.create_saved_model(self.model, "../Projects/" + self.project.name[:-1] + "/my_models")
 
-                # self.convert.from_concrete_functions(self.model, "../Projects/" + self.project.name[:-1] + "/my_models", self.project.name[:-1])
+                if self.project.tf_lite_model == True:
+                    self.convert.from_keras_to_tflite(self.model, "../Projects/" + self.project.name[:-1] + "/my_models", self.project.name[:-1])
 
             elif project_option == "7":
+
+                self.inference = Inference()
+
+                self.inference.perform_tflite_inference("../Projects/", self.project.name[:-1])
+
+            elif project_option == "8":
 
                 print("Deploy model for testing")
 
