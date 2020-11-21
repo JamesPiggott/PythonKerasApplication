@@ -1,9 +1,8 @@
-virtualenv
-virtualenvwrapper
+
 numpy
 scipy
 scikit-learn
-tensorflow
+
 pillow
 h5py
 keras
@@ -11,3 +10,4 @@ pandas
 matplotlib
 pytest
 flask
+kivy
