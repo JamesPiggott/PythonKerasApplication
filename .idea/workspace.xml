@@ -2,43 +2,102 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f72b2b62-cd85-4edb-99e5-0986832cbbd2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ReadData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/KerasTutorial.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/KerasTutorial.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KerasAutoencoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/redundant/KerasAutoencoder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KerasExoplanetCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/redundant/KerasExoplanetCNN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KerasZalando.py" beforeDir="false" afterPath="$PROJECT_DIR$/KerasZalando.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainApplication.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainApplication.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/redundant/cat.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/redundant/dog.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion_model_dropout.h5py" beforeDir="false" afterPath="$PROJECT_DIR$/redundant/fashion_model_dropout.h5py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/project_definition.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documents/project_definition.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/tips_and_trick.md" beforeDir="false" afterPath="$PROJECT_DIR$/documents/tips_and_trick.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_projects/auto_encoder/auto_encoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/example_projects/auto_encoder/auto_encoder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_projects/auto_encoder/project.txt" beforeDir="false" afterPath="$PROJECT_DIR$/example_projects/auto_encoder/project.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_projects/boston_housing/boston_housing.py" beforeDir="false" afterPath="$PROJECT_DIR$/example_projects/boston_housing/boston_housing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_projects/boston_housing/project.txt" beforeDir="false" afterPath="$PROJECT_DIR$/example_projects/boston_housing/project.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_projects/exoplanet_detection/exoplanet_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/example_projects/exoplanet_detection/exoplanet_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_projects/exoplanet_detection/project.txt" beforeDir="false" afterPath="$PROJECT_DIR$/example_projects/exoplanet_detection/project.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_projects/fashion_mnist/fashion_mnist.py" beforeDir="false" afterPath="$PROJECT_DIR$/example_projects/fashion_mnist/fashion_mnist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_projects/fashion_mnist/project.txt" beforeDir="false" afterPath="$PROJECT_DIR$/example_projects/fashion_mnist/project.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_projects/rest_api_example/KerasRestApiSimpleRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/example_projects/rest_api_example/KerasRestApiSimpleRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_projects/rest_api_example/rest_api_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/example_projects/rest_api_example/rest_api_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_projects/stock_prediction/project.txt" beforeDir="false" afterPath="$PROJECT_DIR$/example_projects/stock_prediction/project.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_projects/stock_prediction/stock_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/example_projects/stock_prediction/stock_prediction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inference_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/inference_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kv/menu.kv" beforeDir="false" afterPath="$PROJECT_DIR$/kv/menu.kv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter2/MNIST.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter2/MNIST.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter3/BostonHousing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter3/BostonHousing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter3/IMDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter3/IMDB.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter3/Reuters.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter3/Reuters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter6/IMDB_embedding.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter6/IMDB_embedding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter6/IMDB_processing_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter6/IMDB_processing_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter7/MinimalFunctionalModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter7/MinimalFunctionalModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter7/MultiInputModels.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter7/MultiInputModels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter7/MultiOutputModels.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter7/MultiOutputModels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter7/SiameseLSTM.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter7/SiameseLSTM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/auto_encoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/auto_encoder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/data/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/data/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/models/AE.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/models/AE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/models/GAN.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/models/GAN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/models/MuseGAN.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/models/MuseGAN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/models/RNNAttention.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/models/RNNAttention.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/models/VAE.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/models/VAE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/models/WGAN.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/models/WGAN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/models/WGANGP.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/models/WGANGP.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/models/cycleGAN.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/models/cycleGAN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/models/layers/layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/models/layers/layers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/run/compose/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/run/compose/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/run/gan/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/run/gan/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/run/paint/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/run/paint/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/run/vae/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/run/vae/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/run/write/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/run/write/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/scripts/download_cyclegan_data.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/scripts/download_cyclegan_data.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/scripts/download_gutenburg_data.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/scripts/download_gutenburg_data.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/test_auto_encoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/test_auto_encoder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/utils/callbacks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/utils/callbacks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/utils/loaders.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/utils/loaders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/utils/write.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter3/utils/write.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/data/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/data/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/generative_adversarial_networks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/generative_adversarial_networks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/models/AE.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/models/AE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/models/GAN.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/models/GAN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/models/MuseGAN.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/models/MuseGAN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/models/RNNAttention.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/models/RNNAttention.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/models/VAE.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/models/VAE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/models/WGAN.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/models/WGAN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/models/WGANGP.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/models/WGANGP.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/models/cycleGAN.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/models/cycleGAN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/models/layers/layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/models/layers/layers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/run/compose/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/run/compose/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/run/gan/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/run/gan/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/run/paint/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/run/paint/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/run/vae/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/run/vae/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/run/write/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/run/write/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/scripts/download_cyclegan_data.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/scripts/download_cyclegan_data.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/scripts/download_gutenburg_data.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/scripts/download_gutenburg_data.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/utils/callbacks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/utils/callbacks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/utils/loaders.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/utils/loaders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/utils/write.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/utils/write.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/wasserstein_generative_adversarial_networks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/wasserstein_generative_adversarial_networks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/wasserstein_generative_adversarial_networks_gp.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenerativeDeepLearning/Chapter4/wasserstein_generative_adversarial_networks_gp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/converter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/evaluate.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/evaluate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inference.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/inference.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/system.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/system.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="150">
-                <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -55,67 +114,32 @@
       <find>processData</find>
     </findStrings>
   </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/KerasStart.py" />
-        <option value="$PROJECT_DIR$/KerasRestApi.py" />
-        <option value="$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/train.py" />
-        <option value="$PROJECT_DIR$/KerasStockPrediction.py" />
-        <option value="$PROJECT_DIR$/src/KerasStockPrediction.py" />
-        <option value="$PROJECT_DIR$/KerasAutoencoder.py" />
-        <option value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/QuicksortMain.py" />
-        <option value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Quicksort.py" />
-        <option value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Multithreading/Multithreading.py" />
-        <option value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Bubblesort.py" />
-        <option value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Selectionsort.py" />
-        <option value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Mergesort.py" />
-        <option value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Insertionsort.py" />
-        <option value="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter2/MNIST.py" />
-        <option value="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter3/IMDB.py" />
-        <option value="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter3/Reuters.py" />
-        <option value="$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter3/BostonHousing.py" />
-        <option value="$PROJECT_DIR$/src/ReadData.py" />
-        <option value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Numpy/NumpyArray.py" />
-        <option value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Heapsort.py" />
-        <option value="$PROJECT_DIR$/KerasZalando.py" />
-        <option value="$PROJECT_DIR$/MainApplication.py" />
-        <option value="$PROJECT_DIR$/README.md" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="27" />
-    <option name="width" value="1370" />
-    <option name="height" value="826" />
-  </component>
+  <component name="JupyterTrust" id="84877150-dad6-4a70-920e-ed0dea65b437" />
+  <component name="ProjectId" id="1kacBblGilH1h6ywiYKczTP7RRx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PythonKerasApplication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonKerasApplication" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PythonGlyphReader" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -127,18 +151,6 @@
       <recent name="$PROJECT_DIR$/input" />
       <recent name="$PROJECT_DIR$/../KerasGlyphReader" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Python.MainApplication">
     <configuration name="Heapsort" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -153,11 +165,15 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Heapsort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="Insertionsort" type="PythonConfigurationType" factoryName="Python">
       <module name="PythonSoftwareEngineeringInterview" />
@@ -171,11 +187,15 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Insertionsort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="KerasZalando" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="KerasTutorial" />
@@ -189,11 +209,15 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/KerasZalando.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="MainApplication" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="KerasTutorial" />
@@ -207,11 +231,15 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MainApplication.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="NumpyArray" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonSoftwareEngineeringInterview" />
@@ -225,11 +253,15 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Numpy/NumpyArray.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="ReadData" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="KerasTutorial" />
@@ -243,11 +275,15 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/ReadData.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.Insertionsort" />
@@ -267,6 +303,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -277,6 +314,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522484762816</updated>
+      <workItem from="1605942012905" duration="1308000" />
     </task>
     <task id="LOCAL-00001" summary="Added pip command">
       <created>1524724227294</created>
@@ -365,27 +403,8 @@
     <option name="localTasksCounter" value="13" />
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1916" height="964" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16858038" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005219" side_tool="true" weight="0.3407494" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947807" weight="0.21693122" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39929742" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-    </layout>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -403,314 +422,10 @@
     <MESSAGE value="Heapsort first implementation" />
     <option name="LAST_COMMIT_MESSAGE" value="Heapsort first implementation" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="2" />
-    </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/KerasStockPrediction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Quicksort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="49" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Multithreading/Multithreading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Quicksort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redundant/KerasAutoencoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KerasZalando.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4335">
-          <caret line="289" selection-start-line="289" selection-end-line="289" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/KerasStockPrediction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="74" column="65" selection-start-line="74" selection-start-column="63" selection-end-line="74" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KerasZalando.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/KerasStockPrediction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/classify.py" />
-    <entry file="file://$USER_HOME$/anaconda/envs/KerasGlyphReader/lib/python3.6/site-packages/keras/datasets/fashion_mnist.py" />
-    <entry file="file://$PROJECT_DIR$/KerasZalando.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="45" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/classify.py" />
-    <entry file="file://$PROJECT_DIR$/KerasZalando.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/classify.py" />
-    <entry file="file://$PROJECT_DIR$/KerasStart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KerasStart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/envs/KerasGlyphReader/lib/python3.6/site-packages/keras/datasets/fashion_mnist.py" />
-    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/imageLoader.py" />
-    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/featureExtractor.py" />
-    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/train.py" />
-    <entry file="file://$PROJECT_DIR$/../KerasGlyphReader/glyphreader-master/src/classify.py" />
-    <entry file="file://$PROJECT_DIR$/input/individual_stocks_5yr/A_data.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/input/merge.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/envs/KerasTutorial/lib/python3.6/subprocess.py" />
-    <entry file="file://$PROJECT_DIR$/input/getSandP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="67" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/all_stocks_5yr.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="487">
-          <caret line="26694" column="7" selection-start-line="26694" selection-start-column="7" selection-end-line="26694" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Vectorization/VectorizationComparison.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/QuicksortMain.py" />
-    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Selectionsort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Insertionsort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Mergesort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/KerasStockPrediction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KerasRestApi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter2/MNIST.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="22" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/keras/engine/training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="1489" selection-start-line="1489" selection-end-line="1489" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/keras/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="1001" selection-start-line="1001" selection-end-line="1001" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter3/BostonHousing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="58" column="49" lean-forward="true" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter3/Reuters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DeepLearningWithPythonExamples/Chapter3/IMDB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ReadData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Multithreading/Multithreading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="25" selection-start-line="25" selection-end-line="25" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Numpy/NumpyArray.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#90#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Bubblesort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Quicksort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonSoftwareEngineeringInterview/Sort/Heapsort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KerasZalando.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1933">
-          <caret line="149" column="21" selection-start-line="149" selection-start-column="21" selection-end-line="149" selection-end-column="21" />
-          <folding>
-            <element signature="e#116#128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redundant/KerasAutoencoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KerasStart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainApplication.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="150">
-            <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="461" y="169" key="SettingsEditor" timestamp="1605942763179">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605942763179" />
   </component>
 </project>
