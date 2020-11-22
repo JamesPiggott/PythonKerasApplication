@@ -4,6 +4,8 @@ import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 import numpy as np
 
+import os
+
 from tensorflow.keras.datasets import fashion_mnist
 from tensorflow.keras.preprocessing.image import load_img
 from tensorflow.keras.preprocessing.image import img_to_array
@@ -16,6 +18,7 @@ from tensorflow.keras.optimizers import Adam
 class FashionMnist:
 
     def __init__(self):
+        # os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
         self.train_X = ""
         self.train_Y = ""
         self.test_X = ""

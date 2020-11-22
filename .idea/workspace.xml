@@ -106,14 +106,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>fashion_model</find>
-      <find>train_label</find>
-      <find>FeatureExtractor</find>
-      <find>processData</find>
-    </findStrings>
-  </component>
   <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
     <envs>
       <env key="FLASK_APP" value="app" />
@@ -143,13 +135,14 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/redundant" />
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/input" />
       <recent name="$PROJECT_DIR$/../KerasGlyphReader" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ajpig\OneDrive\Documenten\Code Projects\Git Projects\Python\PythonAutoKeras\example_projects\exoplanet_detection\data" />
+      <recent name="$PROJECT_DIR$/redundant" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="Python.MainApplication">
@@ -315,6 +308,12 @@
       <option name="presentableId" value="Default" />
       <updated>1522484762816</updated>
       <workItem from="1605942012905" duration="1308000" />
+      <workItem from="1605970796516" duration="1767000" />
+      <workItem from="1605972596706" duration="696000" />
+      <workItem from="1606028736677" duration="1178000" />
+      <workItem from="1606032556270" duration="55000" />
+      <workItem from="1606033213912" duration="285000" />
+      <workItem from="1606042251907" duration="1047000" />
     </task>
     <task id="LOCAL-00001" summary="Added pip command">
       <created>1524724227294</created>
@@ -423,9 +422,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Heapsort first implementation" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="461" y="169" key="SettingsEditor" timestamp="1605942763179">
+    <state x="461" y="169" key="SettingsEditor" timestamp="1606028890848">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605942763179" />
+    <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1606028890848" />
   </component>
 </project>

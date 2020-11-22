@@ -1,12 +1,7 @@
-import tensorflow as tf
-
-from keras.models import Sequential
-from keras.layers import Dense
-from keras.datasets import boston_housing
-from keras.models import model_from_json
-
-import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
+import tensorflow as tf
+from keras.datasets import boston_housing
+
 
 class BostonHousing:
 
@@ -35,7 +30,7 @@ class BostonHousing:
         self.batch_size = ""
 
         self.load_data()
-        self.define_model(10, 64)
+        self.define_model(10000, 64)
         self.set_optimizer()
         self.train_model()
         self.evaluate_model()
@@ -60,8 +55,8 @@ class BostonHousing:
         self.model.summary()
 
     def set_optimizer(self):
-        self.model.compile(optimizer='rmsprop', 
-                loss='mse', 
+        self.model.compile(optimizer='rmsprop',
+                loss='mse',
                 metrics=['mse', 'mae'])
 
 
@@ -76,7 +71,7 @@ class BostonHousing:
         mae  = self.history.history[ 'mae' ]
 
         #------------------------------------------------
-        # Plot mse and mae 
+        # Plot mse and mae
         #------------------------------------------------
         plt.plot  ( mse, label='MSE')
         plt.plot  ( mae, label='MAE')
@@ -87,7 +82,7 @@ class BostonHousing:
     def store_model(self, path):
         print("Store the model")
 
-        # Create 
+        # Create
         self.model.save("my_model")
         # saved_model_path = "/my_model.h5"
         # self.model.save(path + saved_model_path)
