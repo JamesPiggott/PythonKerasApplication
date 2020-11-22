@@ -1,40 +1,21 @@
 import matplotlib.pyplot as plt
 import tensorflow as tf
+import os
 from keras.datasets import boston_housing
 
 
 class BostonHousing:
 
-    # Data variables
-    train_X = ""
-    train_Y = ""
-    test_X  = ""
-    test_Y  = ""
-    classes = ""
+    def __init__(self, name):
+        model_folder = os.path.join("example_projects", name, "models")
 
-    # Model variables
-    model = ""
-    history = ""
-    epochs = ""
-    batch_size = ""
-
-    def __init__(self):
-        self.train_X = ""
-        self.train_Y = ""
-        self.test_X = ""
-        self.test_Y = ""
-        self.classes = ""
-        self.model = ""
-        self.history = ""
-        self.epochs = ""
-        self.batch_size = ""
-
-        self.load_data()
-        self.define_model(10000, 64)
-        self.set_optimizer()
-        self.train_model()
-        self.evaluate_model()
-        self.store_model("example_projects/boston_housing/")
+        # self.load_data()
+        # self.define_model(100, 64)
+        # self.set_optimizer()
+        # self.train_model()
+        # self.evaluate_model()
+        # self.store_model(model_folder)
+        self.load_model(model_folder)
 
 
     def load_data(self):
@@ -82,7 +63,11 @@ class BostonHousing:
     def store_model(self, path):
         print("Store the model")
 
-        # Create
-        self.model.save("my_model")
-        # saved_model_path = "/my_model.h5"
-        # self.model.save(path + saved_model_path)
+        # Save model as TensorFlow saved model
+        self.model.save(path)
+
+    def load_model(self, path):
+        print("Load the model")
+        model = tf.keras.models.load_model(path)
+        model.summary()
+        print(model.layers)

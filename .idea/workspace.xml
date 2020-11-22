@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f72b2b62-cd85-4edb-99e5-0986832cbbd2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
@@ -131,21 +149,22 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$USER_HOME$/anaconda3/envs/autokeras" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/input" />
-      <recent name="$PROJECT_DIR$/../KerasGlyphReader" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ajpig\OneDrive\Documenten\Code Projects\Git Projects\Python\PythonAutoKeras\documents" />
       <recent name="C:\Users\ajpig\OneDrive\Documenten\Code Projects\Git Projects\Python\PythonAutoKeras\example_projects\exoplanet_detection\data" />
       <recent name="$PROJECT_DIR$/redundant" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/input" />
+      <recent name="$PROJECT_DIR$/../KerasGlyphReader" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.MainApplication">
+  <component name="RunManager" selected="Python.app">
     <configuration name="Heapsort" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonSoftwareEngineeringInterview" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -256,7 +275,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ReadData" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="KerasTutorial" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -264,12 +283,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/ReadData.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -280,19 +299,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.Insertionsort" />
-      <item itemvalue="Python.ReadData" />
       <item itemvalue="Python.NumpyArray" />
       <item itemvalue="Python.Heapsort" />
       <item itemvalue="Python.MainApplication" />
       <item itemvalue="Python.KerasZalando" />
+      <item itemvalue="Python.app" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app" />
         <item itemvalue="Python.MainApplication" />
         <item itemvalue="Python.KerasZalando" />
         <item itemvalue="Python.Heapsort" />
         <item itemvalue="Python.NumpyArray" />
-        <item itemvalue="Python.ReadData" />
       </list>
     </recent_temporary>
   </component>
@@ -314,6 +333,8 @@
       <workItem from="1606032556270" duration="55000" />
       <workItem from="1606033213912" duration="285000" />
       <workItem from="1606042251907" duration="1047000" />
+      <workItem from="1606054259324" duration="1262000" />
+      <workItem from="1606055552254" duration="510000" />
     </task>
     <task id="LOCAL-00001" summary="Added pip command">
       <created>1524724227294</created>
@@ -405,8 +426,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added pip command" />
@@ -422,9 +451,32 @@
     <option name="LAST_COMMIT_MESSAGE" value="Heapsort first implementation" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="461" y="169" key="SettingsEditor" timestamp="1606028890848">
+    <state x="739" y="279" key="FileChooserDialogImpl" timestamp="1606054460768">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1606028890848" />
+    <state x="739" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1606054460768" />
+    <state width="1877" height="478" key="GridCell.Tab.0.bottom" timestamp="1606055532760">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="478" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1606055532760" />
+    <state width="1877" height="478" key="GridCell.Tab.0.center" timestamp="1606055532760">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="478" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1606055532760" />
+    <state width="1877" height="478" key="GridCell.Tab.0.left" timestamp="1606055532760">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="478" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1606055532760" />
+    <state width="1877" height="478" key="GridCell.Tab.0.right" timestamp="1606055532760">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="478" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1606055532760" />
+    <state x="461" y="169" key="SettingsEditor" timestamp="1606055802154">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1606055802154" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PythonAutoKeras$app.coverage" NAME="app Coverage Results" MODIFIED="1606054469708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

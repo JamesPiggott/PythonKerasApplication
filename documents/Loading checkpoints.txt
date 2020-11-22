@@ -1,0 +1,34 @@
+TensorFlow models
+
+Checkpoint: captures exact values of paramters. Do not contain description of computation and so can only be used with source code.
+
+It cosists of the following files
+	.ckpt: binary file
+	.index
+	.data: contains training variables.
+	checkpoint: keeps track of latest checkpoint files saved
+	
+Before 0.11 there was also a .meta file but this has been deprecated.
+
+Saving a model checkpoint has to been done inside a session.
+
+Restoring a checkpoint is an important step to continue training or to saved to SavedModel.
+
+TF1
+with tf.Session() as sess:
+	loader = tf.train.import_meta_graph("checkpoint_file.meta" )
+	loader.restore(sess,"checkpoint_file")
+
+TF2
+ckpt = tf.train.Checkpoint(...)
+status = ckpt.restore('path/to/that/directory/ckpt-12')
+# ... make sure the variables are created
+status.assert_consumed() 
+
+builder = tf.compat.v1.saved_model.builder.SavedModelBuilder(export_dir)
+builder.add_meta_graph_and_variables(sess, [tf.saved_model.TRAINING, tf.saved_model.SERVING], strip_default_attrs=True)
+builder.save()
+
+SavedModel: includes serialzied description of the computation as well as the paramter values.
+Models in this format are independent of their source code.
+

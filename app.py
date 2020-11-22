@@ -117,7 +117,7 @@ class App:
                 break
             if option == "1":
 
-                boston = BostonHousing()
+                boston = BostonHousing("boston_housing")
 
             if option == "2":
 
