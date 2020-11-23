@@ -1,33 +1,45 @@
 from .project import Project
 
 import os
-import glob
 import shutil
 
 class Manager:
 
     def __init__(self):
+        self.projects = "Projects"
+        self.project_folder = os.path.join("..", self.projects)
         print("Manager")
 
-    # List all files in /Projects folder - assuming they are projects
+    # List all files in Projects folder - assuming they are projects
     def list_all_projects(self):
-        return os.listdir('../Projects/')
+        try:
+            if os.path.exists(self.project_folder):
+                return os.listdir(self.project_folder)
+            else:
+                print("There is no " + self.projects + " directory")
+                return None
+        except OSError:
+            print('Error: Opening directory. ' + self.project_folder)
+            return None
 
     # Create a new folder for a project
     def create_folder(self, directory):
+        new_directory = os.path.join(self.project_folder, directory)
+        data_directory = os.path.join(new_directory, "data")
         try:
-            if not os.path.exists('../Projects/' + directory):
-                os.makedirs('../Projects/' + directory + '/data')
+            if not os.path.exists(new_directory):
+                os.makedirs(data_directory)
                 self.create_project_file(directory)
                 return "New directory " + directory + " created"
             else:
                 return "Directory already exists"
         except OSError:
-            print('Error: Opening directory. ' + directory)
+            print('Error: Opening directory. ' + new_directory)
 
     # Create a default project.txt file
     def create_project_file(self, directory):
-        f = open('../Projects/' + directory + "/project.txt", "w+")
+        project_file_dir = os.path.join(self.project_folder, directory, "project.txt")
+        f = open(project_file_dir, "w+")
         f.write("name="+directory+"\n")
         f.write("dnn_type=cnn"+"\n")
         f.write("download_url="+"https://storage.googleapis.com/mledu-datasets/cats_and_dogs_filtered.zip"+"\n")
@@ -45,9 +57,11 @@ class Manager:
 
     # Open specified project and return content of project.txt
     def open_project(self, directory):
+        project_dir = os.path.join(self.project_folder, directory)
+        project_file_dir = os.path.join(project_dir, "project.txt")
         try:
-            if os.path.exists('../Projects/' + directory):
-                file = open('../Projects/' + directory + "/project.txt", "r")
+            if os.path.exists(project_dir):
+                file = open(project_file_dir, "r")
 
                 myvars = {}
                 for line in file:
@@ -65,7 +79,8 @@ class Manager:
 
     # Changes made to project are saved back to project.txt
     def save_project(self, project):
-        f = open('../Projects/' + project.name[:-1] + "/project.txt", "w+")
+        project_file_dir = os.path.join(self.project_folder, project.name[:-1], "project.txt")
+        f = open(project_file_dir, "w+")
         f.write("name="+project.name +"\n")
         f.write("dnn_type="+project.dnn_type+"\n")
         f.write("download_url="+project.download_url+"\n")
@@ -83,9 +98,10 @@ class Manager:
 
     # Deleting a new folder for a project
     def delete_folder(self, directory):
+        project_dir = os.path.join(self.project_folder, directory)
         try:
-            if os.path.exists('../Projects/' + directory):
-                shutil.rmtree('../Projects/' + directory)
+            if os.path.exists(project_dir):
+                shutil.rmtree(project_dir)
                 return "Project file deleted"
             else:
                 return "Specified directory cannot be found"

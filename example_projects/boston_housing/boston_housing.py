@@ -7,8 +7,7 @@ from keras.datasets import boston_housing
 class BostonHousing:
 
     def __init__(self, name):
-        model_folder = os.path.join("example_projects", name, "models")
-
+        self.model_folder = os.path.join("example_projects", name, "models")
         self.load_data()
         self.define_model(100, 64)
         self.set_optimizer()

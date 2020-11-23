@@ -249,11 +249,11 @@ class App:
             elif project_option == "1":
 
                 print()
-                print("The following project folder were detected")
                 projects = self.manager.list_all_projects()
-                print()
-                for project in projects:
-                    print(" # " + project)
+                if projects is not None:
+                    print("The following project folder were detected")
+                    for project in projects:
+                        print(" # " + project)
                 print()
 
             elif project_option == "2":
