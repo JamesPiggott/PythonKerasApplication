@@ -150,7 +150,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/anaconda3/envs/autokeras" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -334,7 +334,8 @@
       <workItem from="1606033213912" duration="285000" />
       <workItem from="1606042251907" duration="1047000" />
       <workItem from="1606054259324" duration="1262000" />
-      <workItem from="1606055552254" duration="510000" />
+      <workItem from="1606055552254" duration="645000" />
+      <workItem from="1606056384518" duration="825000" />
     </task>
     <task id="LOCAL-00001" summary="Added pip command">
       <created>1524724227294</created>
@@ -436,6 +437,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added pip command" />
@@ -471,10 +473,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="478" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1606055532760" />
-    <state x="461" y="169" key="SettingsEditor" timestamp="1606055802154">
+    <state x="461" y="169" key="SettingsEditor" timestamp="1606056475314">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1606055802154" />
+    <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1606056475314" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonAutoKeras$app.coverage" NAME="app Coverage Results" MODIFIED="1606054469708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -1,8 +1,7 @@
-
 numpy
 scipy
 scikit-learn
-tensorflow-gpu
+tensorflow
 pillow
 h5py
 keras

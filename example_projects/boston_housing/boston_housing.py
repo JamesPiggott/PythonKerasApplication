@@ -9,12 +9,12 @@ class BostonHousing:
     def __init__(self, name):
         model_folder = os.path.join("example_projects", name, "models")
 
-        # self.load_data()
-        # self.define_model(100, 64)
-        # self.set_optimizer()
-        # self.train_model()
-        # self.evaluate_model()
-        # self.store_model(model_folder)
+        self.load_data()
+        self.define_model(100, 64)
+        self.set_optimizer()
+        self.train_model()
+        self.evaluate_model()
+        self.store_model(model_folder)
         self.load_model(model_folder)
 
 
