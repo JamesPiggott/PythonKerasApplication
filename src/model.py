@@ -1,14 +1,14 @@
 import tensorflow as tf
+import os
 from tensorflow.keras.optimizers import RMSprop
-import importlib
+
 
 class Model:
 
-    def __init__(self):
-        print("")
+    def __init__(self, manager):
+        self.manager = manager
         self.model = ""
         self.history = ""
-
 
     def define_model(self):
         print("Define the model")
@@ -26,28 +26,36 @@ class Model:
 
         self.model.summary()
 
-
     def set_optimizer(self):
         print("Setting the optimizer")
         self.model.compile(optimizer=RMSprop(lr=0.001),
               loss='binary_crossentropy',
               metrics = ['accuracy'])
 
-
     def set_data_augmentation(self):
         print("Setting data augmentation")
 
-    def load_model(self, model_name):
-        """Load a pre-trained for transfer learning. Unless name is specified 'my_model.h5' is used
-        
+    def load_model_from_text_file(self):
+        """Return model with layers of trainign and inference features
 
-        Parameters:
-        model_name (string): Name of pre-trained model that needs to be loaded
-
+        If the text file conforms to the correct Keras syntax then every line will be interpreted as being part
+        of a functional model.
         """
+        model_file_location = os.path.join(self.manager.project_folder, "model", "model.txt")
+        try:
+            if os.path.exists(model_file_location):
+                file = open(model_file_location, "r")
+                api_layers = {}
+                for line in file:
+                    self.interpret_api_layer(line)
 
-    def load_model_from_project(self, project_name):
-        print(project_name)
-        module_name = project_name
-        module = importlib.import_module(module_name,package="Model")
-        print(module.__doc__)
+                return "Model file opened", self
+            else:
+                return "Model file could not be opened", None
+        except OSError:
+            return 'Error: Opening directory. ' + self.manager.project_folder, None
+
+    def interpret_api_layer(self, line):
+        if line is not "":
+            print(line)
+        # else:

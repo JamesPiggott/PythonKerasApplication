@@ -3,8 +3,8 @@ from .project import Project
 import os
 import shutil
 
-class Manager:
 
+class Manager:
     def __init__(self):
         self.projects = "Projects"
         self.project_folder = os.path.join("..", self.projects)
@@ -94,7 +94,6 @@ class Manager:
         f.write("model_format="+project.model_format+"\n")
         f.write("tf_lite_model="+project.tf_lite_model+"\n")
         f.close()
-        
 
     # Deleting a new folder for a project
     def delete_folder(self, directory):

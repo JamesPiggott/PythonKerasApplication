@@ -18,6 +18,9 @@ from src.inference import Inference
 
 class App:
 
+    def __init__(self):
+        print()
+
     def get_user_permission(self, request_message):
         reply = input(request_message + " ")
         if reply in ['y', 'Y', 'yes', 'Yes', 'YES']:
@@ -183,7 +186,7 @@ class App:
                 self.project.data.transform_data()
             elif project_option == "3":
 
-                self.model = Model()
+                self.model = Model(self.manager)
 
                 self.model.define_model()
                 

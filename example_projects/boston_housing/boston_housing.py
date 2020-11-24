@@ -13,8 +13,8 @@ class BostonHousing:
         self.set_optimizer()
         self.train_model()
         self.evaluate_model()
-        self.store_model(model_folder)
-        self.load_model(model_folder)
+        self.store_model(self.model_folder)
+        self.load_model(self.model_folder)
 
 
     def load_data(self):
