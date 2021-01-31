@@ -27,15 +27,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f72b2b62-cd85-4edb-99e5-0986832cbbd2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutoKeras Requirements.docx" beforeDir="false" afterPath="$PROJECT_DIR$/documents/AutoKeras Requirements.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_projects/boston_housing/boston_housing.py" beforeDir="false" afterPath="$PROJECT_DIR$/example_projects/boston_housing/boston_housing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inference_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/support/inference_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-gpu-wandb.py" beforeDir="false" afterPath="$PROJECT_DIR$/support/test-gpu-wandb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/converter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +70,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -225,11 +219,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Insertionsort" />
-      <item itemvalue="Python.NumpyArray" />
       <item itemvalue="Python.Heapsort" />
-      <item itemvalue="Python.MainApplication" />
+      <item itemvalue="Python.Insertionsort" />
       <item itemvalue="Python.KerasZalando" />
+      <item itemvalue="Python.MainApplication" />
+      <item itemvalue="Python.NumpyArray" />
       <item itemvalue="Python.app" />
     </list>
     <recent_temporary>
@@ -394,31 +388,5 @@
     <MESSAGE value="Intro to Numpy" />
     <MESSAGE value="Heapsort first implementation" />
     <option name="LAST_COMMIT_MESSAGE" value="Heapsort first implementation" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="739" y="279" key="FileChooserDialogImpl" timestamp="1606054460768">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="739" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1606054460768" />
-    <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1606164792189">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1606164792189" />
-    <state width="1899" height="285" key="GridCell.Tab.0.center" timestamp="1606164792189">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1606164792189" />
-    <state width="1899" height="285" key="GridCell.Tab.0.left" timestamp="1606164792189">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1606164792189" />
-    <state width="1899" height="285" key="GridCell.Tab.0.right" timestamp="1606164792189">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1606164792189" />
-    <state x="461" y="169" key="SettingsEditor" timestamp="1606244689053">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1606244689053" />
   </component>
 </project>

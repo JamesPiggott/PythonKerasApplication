@@ -46,6 +46,9 @@ class Converter:
         buffer = converter.convert()
         open(file_name + '.tflite' , 'wb' ).write( buffer )
 
+    def from_checkpoint_to_saved_model(self, model, export_path, file_name):
+        pass
+
     def optimization_of_model(self):
         mode = "Speed" 
 
