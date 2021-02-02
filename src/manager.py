@@ -39,20 +39,22 @@ class Manager:
     # Create a default project.txt file
     def create_project_file(self, directory):
         project_file_dir = os.path.join(self.project_folder, directory, "project.txt")
-        f = open(project_file_dir, "w+")
-        f.write("name="+directory+"\n")
-        f.write("dnn_type=cnn"+"\n")
-        f.write("download_url="+"https://storage.googleapis.com/mledu-datasets/cats_and_dogs_filtered.zip"+"\n")
-        f.write("data_set_name="+"\n")
-        f.write("epochs=10"+"\n")
-        f.write("steps_per_epoch=0"+"\n")
-        f.write("validation_steps=0"+"\n")
-        f.write("loss_function=CategoricalCrossentropy"+"\n")
-        f.write("optimizer=adam"+"\n")
-        f.write("batch_size=64"+"\n")
-        f.write("model_format=h5"+"\n")
-        f.write("tf_lite_model=yes"+"\n")
-        f.close()
+
+        with open(project_file_dir, "w+") as f:
+            f.write("name="+directory+"\n")
+            f.write("dnn_type=cnn"+"\n")
+            f.write("download_url="+"https://storage.googleapis.com/mledu-datasets/cats_and_dogs_filtered.zip"+"\n")
+            f.write("data_set_name="+"\n")
+            f.write("epochs=10"+"\n")
+            f.write("steps_per_epoch=0"+"\n")
+            f.write("validation_steps=0"+"\n")
+            f.write("loss_function=CategoricalCrossentropy"+"\n")
+            f.write("optimizer=adam"+"\n")
+            f.write("batch_size=64"+"\n")
+            f.write("model_format=h5"+"\n")
+            f.write("tf_lite_model=yes"+"\n")
+            f.close()
+
         return "New project file for " + directory + " created"
 
     # Open specified project and return content of project.txt
@@ -61,15 +63,16 @@ class Manager:
         project_file_dir = os.path.join(project_dir, "project.txt")
         try:
             if os.path.exists(project_dir):
-                file = open(project_file_dir, "r")
 
-                myvars = {}
-                for line in file:
-                    name, var = line.partition("=")[::2]
-                    myvars[name.strip()] = str(var)
+                with open(project_file_dir, "r") as file:
 
-                project = Project()
-                project.parse_input(myvars)
+                    myvars = {}
+                    for line in file:
+                        name, var = line.partition("=")[::2]
+                        myvars[name.strip()] = str(var)
+
+                    project = Project()
+                    project.parse_input(myvars)
     
                 return "Project file opened", project
             else:

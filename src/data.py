@@ -1,19 +1,25 @@
-import requests 
+"""
+The Data class is used to represent the dataset used for training.
+
+It provides functions for loading and unzipping files and methods to create training and validation datasets.
+"""
+
+import requests
 import zipfile
 import os
+
+
+def download_url(url, save_path, chunk_size=128):
+    print("URL: " + url)
+    r = requests.get(url, stream=True)
+    with open(save_path, 'wb') as fd:
+        for chunk in r.iter_content(chunk_size=chunk_size):
+            fd.write(chunk)
+
+
 class Data:
 
-    '''
-    Created on July 15 2018
-
-    @author: James Piggott
-
-    This class contains the functions to that will analyze and transform the data set for use with Keras.
-    '''
-    """Represent the high-level definition of a Project"""
     def __init__(self):
-        print("Init")
-
         self.data_set_name = ""
         self.train_dir = ""
         self.validation_dir = ""
@@ -21,14 +27,6 @@ class Data:
         self.validation_dogs_dir = ""
         self.train_cat_fnames = ""
         self.train_dog_fnames = ""
-
-
-    def download_url(self, url, save_path, chunk_size=128):
-        print("URL: " + url)
-        r = requests.get(url, stream=True)
-        with open(save_path, 'wb') as fd:
-            for chunk in r.iter_content(chunk_size=chunk_size):
-                fd.write(chunk)
 
     def unzip_data_file(self, save_path):
         local_zip = save_path
@@ -38,11 +36,8 @@ class Data:
         zip_ref.extractall(save_path + "../../")
         zip_ref.close()
 
-
     def load_data_cnn(self, data_location):
         print("Load datas")
-
-
 
     def load_data(self, data_location):
         """Load the location of the data training and validation sets. 
@@ -70,15 +65,13 @@ class Data:
             val_set.append(os.path.join(self.validation_dir, cat))
 
         for training in train_set:
-            print('total training '+ cat +' images :', len(os.listdir(training)))
+            print('total training ' + cat + ' images :', len(os.listdir(training)))
 
         for validation in val_set:
-            print('total validation '+ cat +' images :', len(os.listdir(validation)))
-
+            print('total validation ' + cat + ' images :', len(os.listdir(validation)))
 
     def autodetect_data_format(self):
         print("Checking what format data files have")
-
 
     def transform_data(self):
         print("Transforming data set into suitable format")
